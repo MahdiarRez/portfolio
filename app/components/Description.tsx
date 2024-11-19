@@ -15,7 +15,7 @@ function Description() {
         <Stroke1 />
         {!descriptionIsOpen ? (
           <div
-            className=" flex justify-center items-center py-7 px-10 cursor-pointer hover:brightness-110 transition-all duration-300 animate-fade-up animate-duration-500"
+            className=" flex justify-center items-center py-7 px-10 cursor-pointer hover:brightness-110 transition-all duration-300 animate-fade-down animate-duration-500"
             onClick={() => setDescriptionIsOpen(!descriptionIsOpen)}
           >
             <NeonText
@@ -30,7 +30,7 @@ function Description() {
         ) : (
           <div
             onClick={() => setDescriptionIsOpen(!descriptionIsOpen)}
-            className="px-7 cursor-pointer py-6 max-w-[330px] sm2:max-w-96 sm:max-w-[450px] lg:max-w-[550px] animate-fade-down animate-duration-500"
+            className="px-7 cursor-pointer py-6 max-w-[330px] sm2:max-w-96 sm:max-w-[450px] lg:max-w-[550px] animate-fade-up animate-duration-500"
           >
             <p
               className={`${Mont.className} text-xs md:tracking-wider tracking-wide leading-5 sm2:text-sm sm2:py-6 sm2:px-5 py-3 px-2 bg-black bg-opacity-35 border-solid border border-Pink text-center font-light text-white`}

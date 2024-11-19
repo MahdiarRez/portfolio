@@ -8,6 +8,7 @@ import FadeInDiv from "@/app/components/motions/FadeInDiv";
 import FadeUpDiv from "@/app/components/motions/FadeUpDiv";
 import Socials from "@/app/components/Socials";
 import Description from "@/app/components/Description";
+import NavbarMobile from "@/app/components/NavbarMobile";
 // import FadeInDiv from "@/components/FadeInDiv";
 
 const deathStar = localFont({
@@ -23,6 +24,7 @@ function Page() {
         alt="bg-image"
         className="object-cover h-full z-0"
       />
+      <NavbarMobile />
       <Socials />
       <main
         className={`${deathStar.className} tracking-wide w-screen flex justify-center absolute top-28 sm:top-24 `}
