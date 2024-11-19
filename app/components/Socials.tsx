@@ -6,7 +6,7 @@ import ItemSocial from "@/app/components/ItemSocial";
 
 function Socials() {
   return (
-    <div className="hidden sm:flex flex-col items-center justify-center gap-y-5 h-full absolute top-0 bottom-0 left-7 lg:left-11">
+    <div className="hidden md:flex flex-col items-center justify-center gap-y-5 h-full absolute top-0 bottom-0 left-7 lg:left-11">
       <ItemSocial i={1} href="https://github.com/MahdiyarRez">
         <FaGithub
           role="link"
