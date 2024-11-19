@@ -1,10 +1,8 @@
 "use client";
 import React from "react";
-import NeonText from "@/app/components/NeonText";
 import FadeUpDiv from "@/app/components/motions/FadeUpDiv";
-import { Montserrat } from "next/font/google";
-
-const Mont = Montserrat({ subsets: ["latin"], weight: ["400", "500"] });
+import ClickToOpen from "@/app/components/ClickToOpen";
+import TextDescription from "@/app/components/TextDescription";
 
 function Description() {
   const [descriptionIsOpen, setDescriptionIsOpen] = React.useState(false);
@@ -14,33 +12,15 @@ function Description() {
       <div className="relative flex group justify-center items-center ">
         <Stroke1 />
         {!descriptionIsOpen ? (
-          <div
-            className=" flex justify-center items-center py-7 px-10 cursor-pointer hover:brightness-110 transition-all duration-300 animate-fade-right animate-duration-500"
-            onClick={() => setDescriptionIsOpen(!descriptionIsOpen)}
-          >
-            <NeonText
-              clickable={true}
-              classes={"text-2xl font-bold text-center sm:text-3xl "}
-              tracking="tigh"
-            >
-              Click
-              <br /> to open
-            </NeonText>
-          </div>
+          <ClickToOpen
+            setDescriptionIsOpen={setDescriptionIsOpen}
+            descriptionIsOpen={descriptionIsOpen}
+          />
         ) : (
-          <div
-            onClick={() => setDescriptionIsOpen(!descriptionIsOpen)}
-            className="px-7 cursor-pointer py-6 max-w-[330px] sm2:max-w-96 sm:max-w-[450px] lg:max-w-[550px] animate-fade-left animate-duration-500"
-          >
-            <p
-              className={`${Mont.className} text-xs md:tracking-wider tracking-wide leading-5 sm2:text-sm sm2:py-6 sm2:px-5 py-3 px-2 bg-black bg-opacity-35 border-solid border border-Pink text-center font-light text-white`}
-            >
-              I am a skilled Front-End Developer with expertise in React and
-              Next.js. With a strong focus on creating intuitive and responsive
-              web applications, I leverage my knowledge of modern JavaScript
-              frameworks to build seamless user experiences.
-            </p>
-          </div>
+          <TextDescription
+            setDescriptionIsOpen={setDescriptionIsOpen}
+            descriptionIsOpen={descriptionIsOpen}
+          />
         )}
         <Stroke2 />
       </div>
