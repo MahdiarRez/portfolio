@@ -10,19 +10,19 @@ function Socials() {
       <ItemSocial i={1} href="https://github.com/MahdiyarRez">
         <FaGithub
           role="link"
-          className="text-Pink hover:text-white duration-300 transition-colors ease-in-out cursor-pointer size-7 lg:size-9"
+          className="text-Pink hover:text-white duration-300 transition-colors ease-in-out cursor-pointer size-7 lg:size-10"
         />
       </ItemSocial>
       <ItemSocial i={2} href="https://www.linkedin.com/in/mahdiyar-rezaei">
         <FaLinkedin
           role="link"
-          className="text-Pink hover:text-white duration-300 transition-colors ease-in-out cursor-pointer size-7 lg:size-9"
+          className="text-Pink hover:text-white duration-300 transition-colors ease-in-out cursor-pointer size-7 lg:size-10"
         />
       </ItemSocial>
       <ItemSocial i={3} href="https://telegram.me/mahdiyarRez">
         <FaTelegram
           role="link"
-          className="text-Pink hover:text-white duration-300 transition-colors ease-in-out cursor-pointer size-7 lg:size-9"
+          className="text-Pink hover:text-white duration-300 transition-colors ease-in-out cursor-pointer size-7 lg:size-10"
         />
       </ItemSocial>
     </div>

@@ -6,7 +6,6 @@ import NeonText from "@/app/components/NeonText";
 import HeaderNeonText from "@/app/components/HeaderNeonText";
 import FadeInDiv from "@/app/components/motions/FadeInDiv";
 import FadeUpDiv from "@/app/components/motions/FadeUpDiv";
-import Socials from "@/app/components/Socials";
 import Description from "@/app/components/Description";
 import Navbar from "@/app/components/Navbar";
 
@@ -24,7 +23,6 @@ function Page() {
         className="object-cover h-full z-0"
       />
       <Navbar />
-      <Socials />
       <main
         className={`${deathStar.className} tracking-wide w-screen flex justify-center absolute top-36 sm:top-24 `}
       >
@@ -49,6 +47,7 @@ function Page() {
           </FadeUpDiv>
         </div>
       </main>
+
       <Description />
     </div>
   );
