@@ -27,12 +27,12 @@ function Page() {
       <NavbarMobile />
       <Socials />
       <main
-        className={`${deathStar.className} tracking-wide w-screen flex justify-center absolute top-28 sm:top-24 `}
+        className={`${deathStar.className} tracking-wide w-screen flex justify-center absolute top-36 sm:top-24 `}
       >
         <div className="flex flex-col items-center justify-center px-7 gap-y-1 md:gap-y-2">
           <HeaderNeonText skill="React JS" isReverse={false} />
           <FadeInDiv>
-            <NeonText classes="text-2xl sm2:text-4xl md:text-5xl xl:text-6xl">
+            <NeonText classes="text-2xl sm2:text-4xl md:text-5xl xl:text-7xl">
               Front-end Developer
             </NeonText>
           </FadeInDiv>
