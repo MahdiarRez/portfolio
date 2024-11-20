@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .stroke-text {
-    -webkit-text-stroke: 1.2px #CEB7FF; /* Stroke width and color for WebKit browsers */
+    -webkit-text-stroke: 1px #CEB7FF; /* Stroke width and color for WebKit browsers */
 }
 
 .shadow-text {

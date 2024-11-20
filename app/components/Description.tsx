@@ -1,11 +1,20 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import FadeUpDiv from "@/app/components/motions/FadeUpDiv";
 import ClickToOpen from "@/app/components/ClickToOpen";
 import TextDescription from "@/app/components/TextDescription";
 
 function Description() {
   const [descriptionIsOpen, setDescriptionIsOpen] = React.useState(false);
+
+  useEffect(() => {
+    window.addEventListener("keyup", (e) => {
+      const isEnterPressed = e.code === "Enter";
+      if (isEnterPressed) {
+        setDescriptionIsOpen(true);
+      }
+    });
+  }, [setDescriptionIsOpen]);
 
   return (
     <FadeUpDiv className="absolute bottom-20 sm:bottom-28 md:bottom-20 flex justify-center items-center left-0 right-0 ">

@@ -20,11 +20,23 @@ function NavbarBtn({
   href,
   children,
   classes,
+  isResumeBtn = false,
 }: {
   href: string;
   children: React.ReactNode;
   classes?: string;
+  isResumeBtn?: boolean;
 }) {
+  if (isResumeBtn) {
+    return (
+      <Link
+        href={href}
+        className={`${classes} ${Bebas.className} text-white bg-Pink font-light hover:bg-Purple transition-colors duration-300 rounded-sm  px-3 py-2 flex justify-center items-center text-base sm:hidden opacity-90 shadow-text tracking-wider`}
+      >
+        {children}
+      </Link>
+    );
+  }
   return (
     <Link
       href={href}

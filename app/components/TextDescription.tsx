@@ -35,6 +35,11 @@ function TextDescription({
             Contact me
           </NavbarBtn>
         </div>
+        <div className="flex justify-center items-center w-full mt-3.5">
+          <NavbarBtn isResumeBtn={true} href={"/"}>
+            Download Resume
+          </NavbarBtn>
+        </div>
       </div>
     </div>
   );

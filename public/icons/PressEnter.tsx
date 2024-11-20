@@ -1,22 +1,29 @@
+"use client";
 import React from "react";
 import { Bebas_Neue } from "next/font/google";
+import FadeXdiv from "@/app/components/motions/FadeXdiv";
+import TooltipCustom from "@/app/components/TooltipCustom";
 
 const Bebas = Bebas_Neue({ subsets: ["latin"], weight: ["400"] });
 
 function PressEnter() {
   return (
-    <div
-      className="absolute hidden md:flex z-50 flex-col items-center justify-center"
-      style={{ left: "2.75rem", bottom: "2.75rem" }}
+    <FadeXdiv
+      leftOrRight="right"
+      delay={2}
+      className="absolute hidden md:flex z-50 md:flex-col items-center justify-center left-7 bottom-7 lg:left-11 lg:bottom-11"
     >
       <span
-        className={`${Bebas.className} text-Pink mb-3 text-3xl tracking-wide`}
+        data-tooltip-id="tooltip"
+        data-tooltip-content="Press Enter key"
+        data-tooltip-place="top-start"
+        className={`${Bebas.className} mb-1 cursor-default text-2xl block text-Pink tracking-wide lg:text-3xl`}
       >
         Press
       </span>
       <svg
-        width="73"
-        height="74"
+        width="56"
+        height="56"
         viewBox="0 0 73 74"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +66,8 @@ function PressEnter() {
           />
         </g>
       </svg>
-    </div>
+      <TooltipCustom id="tooltip" />
+    </FadeXdiv>
   );
 }
 

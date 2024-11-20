@@ -15,7 +15,7 @@ function HeaderNeonText({
       return (
         <FadeXdiv
           leftOrRight="left"
-          className="flex flex-row  items-center justify-center gap-3 md:gap-4 w-full px-0.5"
+          className="flex flex-row items-center text-nowrap justify-center gap-3 md:gap-4 w-full px-0.5"
         >
           <span className="text-nowrap text-sm md:text-lg font-normal tracking-wider text-Pink">
             {skill}
@@ -26,7 +26,7 @@ function HeaderNeonText({
     return (
       <FadeXdiv
         leftOrRight="right"
-        className="flex flex-row-reverse items-center justify-center gap-3 md:gap-4 w-full px-0.5"
+        className="flex flex-row-reverse items-center text-nowrap justify-center gap-3 md:gap-4 w-full px-0.5"
       >
         <span className="text-nowrap text-sm md:text-lg font-normal tracking-wider text-Pink">
           {skill}

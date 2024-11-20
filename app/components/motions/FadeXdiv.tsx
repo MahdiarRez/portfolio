@@ -6,10 +6,12 @@ function FadeXdiv({
   children,
   className,
   leftOrRight,
+  delay = 0.7,
 }: {
   children: React.ReactNode;
   className?: string;
   leftOrRight: "left" | "right";
+  delay?: number;
 }) {
   if (leftOrRight === "left") {
     return (
@@ -23,7 +25,7 @@ function FadeXdiv({
           type: "spring",
           stiffness: "100",
           damping: 8,
-          delay: 0.7,
+          delay: delay,
         }}
       >
         {children}
@@ -41,7 +43,7 @@ function FadeXdiv({
         type: "spring",
         stiffness: "100",
         damping: 8,
-        delay: 0.7,
+        delay: delay,
       }}
     >
       {children}

@@ -18,8 +18,8 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-[#070622] relative ">
         <Socials />
-        {children}
         <PressEnter />
+        {children}
       </body>
     </html>
   );
