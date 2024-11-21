@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import FadeUpDiv from "@/app/components/motions/FadeUpDiv";
 import ClickToOpen from "@/app/components/ClickToOpen";
 import TextDescription from "@/app/components/TextDescription";
+import clsx from "clsx";
 
 function Description() {
   const [descriptionIsOpen, setDescriptionIsOpen] = React.useState(false);
@@ -17,7 +18,15 @@ function Description() {
   }, [setDescriptionIsOpen]);
 
   return (
-    <FadeUpDiv className="absolute bottom-20 sm:bottom-28 md:bottom-20 flex justify-center items-center left-0 right-0 ">
+    <FadeUpDiv
+      className={clsx(
+        "absolute flex justify-center items-center left-0 right-0 ",
+        {
+          "bottom-14 sm:bottom-24 md:bottom-14": descriptionIsOpen,
+          "bottom-28 sm:bottom-32": !descriptionIsOpen,
+        },
+      )}
+    >
       <div className="relative flex group justify-center items-center ">
         <Stroke1 />
         {!descriptionIsOpen ? (

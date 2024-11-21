@@ -1,6 +1,7 @@
 import React from "react";
 import { Montserrat } from "next/font/google";
 import { NavbarBtn } from "@/app/components/Navbar";
+import { TypoGraphyCustom } from "@/app/components/TypoGraphyCustom";
 
 const Mont = Montserrat({ subsets: ["latin"], weight: ["400", "500"] });
 

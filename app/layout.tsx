@@ -3,6 +3,7 @@ import "./globals.css";
 import React from "react";
 import Socials from "@/app/components/Socials";
 import PressEnter from "@/public/icons/PressEnter";
+import Cv from "@/app/components/Cv";
 
 export const metadata: Metadata = {
   title: "Mahdiyar Rezaei",
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className="bg-[#070622] relative ">
         <Socials />
         <PressEnter />
+        <Cv />
         {children}
       </body>
     </html>

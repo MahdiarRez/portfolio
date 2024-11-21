@@ -11,7 +11,7 @@ function PressEnter() {
     <FadeXdiv
       leftOrRight="right"
       delay={2}
-      className="absolute hidden md:flex z-50 md:flex-col items-center justify-center left-7 bottom-7 lg:left-11 lg:bottom-11"
+      className="absolute hidden sm:flex z-50 sm:flex-col items-center justify-center left-7 bottom-7 lg:left-11 lg:bottom-11"
     >
       <span
         data-tooltip-id="tooltip"
