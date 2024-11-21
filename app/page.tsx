@@ -10,6 +10,7 @@ import Description from "@/app/components/Description";
 import Navbar from "@/app/components/Navbar";
 import { SparklesPreview } from "@/app/components/SnowHeader";
 import { TypoGraphyCustom } from "@/app/components/TypoGraphyCustom";
+import { ShootingStars } from "@/app/components/ui/ShootingStar";
 
 const deathStar = localFont({
   src: "../public/fonts/DeathStar.otf",
@@ -24,6 +25,7 @@ function Page() {
         alt="bg-image"
         className="object-cover h-full z-0"
       />
+      <ShootingStars />
       <Navbar />
       <main
         className={`${deathStar.className} tracking-wide w-screen flex justify-center absolute top-36 sm:top-24 `}
@@ -47,7 +49,6 @@ function Page() {
           </FadeUpDiv>
         </div>
       </main>
-
       <Description />
     </div>
   );

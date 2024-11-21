@@ -12,7 +12,7 @@ function ClickToOpen({
 }: ClickToOpenProps) {
   return (
     <div
-      className="flex justify-center items-center py-7 px-10 cursor-pointer hover:brightness-110 transition-all duration-300 animate-fade-up animate-duration-500"
+      className="flex justify-center items-center py-7 px-10 cursor-pointer hover:brightness-110 transition-all duration-300 "
       onClick={() => setDescriptionIsOpen(!descriptionIsOpen)}
     >
       <NeonText

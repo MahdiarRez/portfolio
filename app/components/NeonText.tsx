@@ -23,7 +23,7 @@ function NeonText({
         style={{
           filter: "drop-shadow(0px 0px 10px rgba(256, 256, 256, 0.7))",
         }}
-        className={`${deathStar.className} stroke-text brightness-110 text-transparent uppercase ${classes} ${tracking}  text-nowrap`}
+        className={`${deathStar.className} stroke-text brightness-110  text-transparent uppercase ${classes} ${tracking}  text-nowrap`}
       >
         {children}
       </span>
@@ -31,7 +31,7 @@ function NeonText({
   }
   return (
     <span
-      className={`${deathStar.className} stroke-text brightness-110 text-transparent uppercase ${classes} ${tracking} shadow-text text-nowrap`}
+      className={`${deathStar.className} stroke-text brightness-110  text-transparent uppercase ${classes} ${tracking} shadow-text text-nowrap`}
     >
       {children}
     </span>
