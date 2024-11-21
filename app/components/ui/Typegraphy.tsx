@@ -3,7 +3,6 @@
 import { cn } from "../../lib/utils";
 import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import { useEffect } from "react";
-import { log } from "node:util";
 
 export const TypewriterEffect = ({
   words,
@@ -43,7 +42,7 @@ export const TypewriterEffect = ({
         },
       );
     }
-  }, [isInView]);
+  }, [isInView, animate]);
 
   const renderWords = () => {
     return (
