@@ -1,6 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import backgroundImage from "@/public/skillsBackground.png";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mahdiyar's Skills",
+  description: "Skills",
+};
 
 function Page() {
   return (
