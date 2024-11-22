@@ -44,7 +44,7 @@ function Page() {
           <SparklesPreview />
           <FadeUpDiv>
             <NeonText
-              classes="inline-block -mt-20 z-40 text-2xl md:text-3xl "
+              classes="inline-block -mt-20 z-40 text-2xl md:text-3xl pl-0.5"
               tracking="tracking-widest"
             >
               <TypoGraphyCustom text="Hello i am Mahdiyar" />
