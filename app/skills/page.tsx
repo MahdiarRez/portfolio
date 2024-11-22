@@ -5,7 +5,6 @@ import type { Metadata } from "next";
 import HeaderNeonText from "@/app/components/HeaderNeonText";
 import localFont from "next/font/local";
 import NeonText from "@/app/components/NeonText";
-import { tree } from "next/dist/build/templates/app-page";
 import FadeInDiv from "@/app/components/motions/FadeInDiv";
 import { TypoGraphyCustom } from "@/app/components/TypoGraphyCustom";
 import FadeUpDiv from "@/app/components/motions/FadeUpDiv";
