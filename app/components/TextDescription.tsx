@@ -19,7 +19,7 @@ function TextDescription({
       className="px-7 cursor-pointer py-6 max-w-[330px] sm2:max-w-96 sm:max-w-[450px] lg:max-w-[550px] "
     >
       <div
-        className={`${Mont.className} text-xs md:tracking-wider tracking-wide leading-5 sm2:text-sm sm2:py-6 sm2:px-5 py-3 px-2 bg-black bg-opacity-35 border-solid border border-Pink text-center font-light text-white`}
+        className={`${Mont.className} text-xs md:tracking-wider tracking-wide flex flex-col items-center justify-between leading-5 sm2:text-sm sm2:py-6 sm2:px-5 py-3 px-2 bg-black bg-opacity-35 border-solid border border-Pink text-center font-light text-white`}
       >
         <p>
           I am a skilled Front-End Developer with expertise in React and
@@ -31,11 +31,9 @@ function TextDescription({
         <div className="hidden sm:flex mt-3.5 flex-row gap-4 w-full items-center justify-center">
           <NavbarBtn href="/skills">Skills</NavbarBtn>
           <NavbarBtn href="/projects">Projects</NavbarBtn>
-          <NavbarBtn classes="text-nowrap" href="/contact">
-            Contact me
-          </NavbarBtn>
+          <NavbarBtn href="/contact">Contact me</NavbarBtn>
         </div>
-        <div className="flex justify-center items-center w-full mt-3.5">
+        <div className="flex sm:hidden justify-center items-center w-full mt-3.5">
           <NavbarBtn isResumeBtn={true} href={"/"}>
             Download Resume
           </NavbarBtn>
