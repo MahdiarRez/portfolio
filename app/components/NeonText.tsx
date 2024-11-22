@@ -31,7 +31,7 @@ function NeonText({
   }
   return (
     <span
-      className={`${deathStar.className} stroke-text brightness-110  text-transparent uppercase ${classes} ${tracking} shadow-text text-nowrap`}
+      className={`${deathStar.className} stroke-text brightness-110 text-transparent uppercase ${classes} ${tracking} text-nowrap`}
     >
       {children}
     </span>

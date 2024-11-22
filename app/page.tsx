@@ -30,10 +30,13 @@ function Page() {
       <main
         className={`${deathStar.className} tracking-wide w-screen flex justify-center absolute top-36 sm:top-24 `}
       >
-        <div className="flex flex-col items-center justify-center px-7 gap-y-1 md:gap-y-2">
+        <div className="flex flex-col items-center justify-center gap-y-1 md:gap-y-2 w-[320px] sm2:w-[432px] md:w-[578px] lg:w-[722px] xl:w-[862px]">
           <HeaderNeonText skill="React JS" isReverse={false} />
-          <FadeInDiv>
-            <NeonText classes="text-[1.67rem] sm2:text-4xl md:text-5xl xl:text-7xl">
+          <FadeInDiv
+            className="w-full flex justify-center items-center"
+            delay={1}
+          >
+            <NeonText classes="text-[1.67rem] sm2:text-4xl md:text-5xl lg:text-6xl xl:text-7xl block flex min-w-full justify-start items-center">
               Front-end Developer
             </NeonText>
           </FadeInDiv>
