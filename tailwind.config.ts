@@ -17,6 +17,7 @@ export default {
       colors: {
         Pink: "#CEB7FF",
         Purple: "#B377FF",
+        DarkBlue: "#070622",
       },
     },
   },

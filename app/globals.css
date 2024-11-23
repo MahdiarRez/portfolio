@@ -34,51 +34,50 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-.bar{
-    background: #d0f0dd;
-    box-shadow: 0 0 0 #40ff22,
-    0px 0px 4px #30ff1f,
-    0px 0px 8px #20ff1b,
-    0px 0px 16px #10ff18;
-    border-radius: 4px;
+
+/*/////////////// spinner ///////////////*/
+.loader {
+    width: 65px;
+    aspect-ratio: 1;
+    position: relative;
+}
+.loader:before,
+.loader:after {
+    content: "";
     position: absolute;
+    border-radius: 50px;
+    box-shadow: 0 0 0 3px inset #CEB7FF;
+    animation: l4 2.5s infinite;
 }
-.left{
-    width: 4px;
-    -webkit-animation: left 2s linear infinite;
+.loader:after {
+    animation-delay: -1.25s;
 }
-@-webkit-keyframes left{
-    0%  {height: 0; top: 96px; left: 0;}
-    20% {height: 100px; top: 0; left: 0;}
-    40% {height: 0; top: 0; left: 0;}
-}
-.top{
-    height: 4px;
-    -webkit-animation: top 2s linear infinite;
-}
-@-webkit-keyframes top{
-    0%  {width: 0; top: 0; left: 0;}
-    20% {width: 0; top: 0; left: 0;}
-    40% {width: 100px; top: 0; left: 0;}
-    60% {width: 0; top:0; left: 100px;}
-}
-.right{
-    width: 4px;
-    -webkit-animation: right 2s linear infinite;
-}
-@-webkit-keyframes right{
-    0%  {height: 0; top: 0; left: 96px;}
-    40% {height: 0; top: 0; left: 96px;}
-    60% {height: 100px; top: 0; left: 96px;}
-    80% {height: 0; top: 100px;left: 96px;}
-}
-.bottom{
-    height: 4px;
-    -webkit-animation: bottom 2s linear infinite;
-}
-@-webkit-keyframes bottom{
-    0%  {width: 0; top: 96px; left: 96px;}
-    60% {width: 0; top: 96px; left: 96px;}
-    80% {width: 100px; top:96px; left: 0px;}
-    100% {width: 0px; top:96px; left: 0px;}
+@keyframes l4 {
+    0% {
+        inset: 0 35px 35px 0;
+    }
+    12.5% {
+        inset: 0 35px 0 0;
+    }
+    25% {
+        inset: 35px 35px 0 0;
+    }
+    37.5% {
+        inset: 35px 0 0 0;
+    }
+    50% {
+        inset: 35px 0 0 35px;
+    }
+    62.5% {
+        inset: 0 0 0 35px;
+    }
+    75% {
+        inset: 0 0 35px 35px;
+    }
+    87.5% {
+        inset: 0 0 35px 0;
+    }
+    100% {
+        inset: 0 35px 35px 0;
+    }
 }

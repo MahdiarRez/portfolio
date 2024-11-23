@@ -5,8 +5,8 @@
 .skillsTitle-shadow-text::before {
     content: 'SKILLS';
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 4px;
+    top: 2px;
     color: transparent;
     -webkit-text-stroke: 3px #B377FF;
     filter: blur(4px);

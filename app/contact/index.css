@@ -1,0 +1,19 @@
+.contactTitle-shadow-text {
+    position: relative;
+}
+
+.contactTitle-shadow-text::before {
+    content: 'CONTACT ME';
+    position: absolute;
+    left: 4px;
+    top: 0;
+    color: transparent;
+    -webkit-text-stroke: 3px #B377FF;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+.intro-shadow-text {
+    position: relative;
+    -webkit-text-stroke: 1px #B377FF;
+}

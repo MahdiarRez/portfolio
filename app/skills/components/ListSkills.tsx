@@ -68,7 +68,7 @@ function ListSkills() {
       >
         RadixUi
       </ItemSkill>
-      <ItemSkill i={12} url="https://github.com/">
+      <ItemSkill i={12} color="hover:text-Purple" url="https://github.com/">
         Git & Github
       </ItemSkill>
       {/*<div className="w-full mt-5 sm2:col-span-4 col-span-3 grid grid-cols-4 place-items-center gap-2 px-2">*/}
