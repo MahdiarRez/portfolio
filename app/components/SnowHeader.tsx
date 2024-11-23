@@ -7,8 +7,8 @@ export function SparklesPreview() {
   return (
     <FadeInDiv delay={2} className="w-full h-20 relative">
       {/* Gradients */}
-      <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent left-0 right-0 via-Pink to-transparent h-[2px] w-full blur-sm" />
-      <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent left-0 right-0 via-Purple to-transparent h-px w-full" />
+      <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent left-0 right-0 via-Pink to-transparent h-[3px] w-full blur-sm" />
+      <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent left-0 right-0 via-Purple to-transparent h-[3px] w-full" />
 
       {/* Core component */}
       <SparklesCore

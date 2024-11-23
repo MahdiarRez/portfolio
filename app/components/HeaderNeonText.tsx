@@ -20,7 +20,10 @@ function HeaderNeonText({
           <span className="text-nowrap text-sm md:text-lg font-normal tracking-wider text-Pink">
             {skill}
           </span>
-          <div className="w-full h-3.5 md:h-4 brightness-110 rounded-sm border border-solid border-Pink"></div>
+          <div
+            style={{ boxShadow: "0px 0px 5px #B377FF" }}
+            className="w-full h-3.5 md:h-4 brightness-110 rounded-sm border border-solid border-Pink"
+          ></div>
         </FadeXdiv>
       );
     return (
@@ -31,7 +34,10 @@ function HeaderNeonText({
         <span className="text-nowrap text-sm md:text-lg font-normal tracking-wider text-Pink">
           {skill}
         </span>
-        <div className="w-full h-3.5 md:h-4 brightness-110  rounded-sm border border-solid border-Pink"></div>
+        <div
+          style={{ boxShadow: "0px 0px 5px #B377FF" }}
+          className="w-full h-3.5 md:h-4 brightness-110  rounded-sm border border-solid border-Pink"
+        ></div>
       </FadeXdiv>
     );
   }
@@ -41,7 +47,10 @@ function HeaderNeonText({
         leftOrRight="right"
         className="flex flex-row items-center justify-center gap-3 md:gap-4 w-full px-0.5"
       >
-        <div className="w-full h-3.5 md:h-4 brightness-110 rounded-sm border border-solid border-Pink"></div>
+        <div
+          style={{ boxShadow: "0px 0px 5px #B377FF" }}
+          className="w-full h-3.5 md:h-4 brightness-110 rounded-sm border border-solid border-Pink"
+        ></div>
       </FadeXdiv>
     );
   }
@@ -50,7 +59,10 @@ function HeaderNeonText({
       leftOrRight="left"
       className="flex flex-row items-center justify-center gap-3 md:gap-4 w-full px-0.5"
     >
-      <div className="w-full h-3.5 md:h-4 brightness-110 rounded-sm border border-solid border-Pink"></div>
+      <div
+        style={{ boxShadow: "0px 0px 5px #B377FF" }}
+        className="w-full h-3.5 md:h-4 brightness-110 rounded-sm border border-solid border-Pink"
+      ></div>
     </FadeXdiv>
   );
 }

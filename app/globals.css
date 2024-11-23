@@ -3,12 +3,7 @@
 @tailwind utilities;
 
 .stroke-text {
-    -webkit-text-stroke: 1px #CEB7FF;
-}
-
-
-.shadow-text {
-    text-shadow: 0 0 15px rgba(179,119,225,0.23);
+    -webkit-text-stroke: 2px #CEB7FF;
 }
 
 body {

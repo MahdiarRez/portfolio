@@ -11,6 +11,7 @@ import Navbar from "@/app/components/Navbar";
 import { SparklesPreview } from "@/app/components/SnowHeader";
 import { TypoGraphyCustom } from "@/app/components/TypoGraphyCustom";
 import { ShootingStars } from "@/app/components/ui/ShootingStar";
+import "./index.css";
 
 const deathStar = localFont({
   src: "../public/fonts/DeathStar.otf",
@@ -36,7 +37,7 @@ function Page() {
             className="w-full flex justify-center items-center"
             delay={1}
           >
-            <NeonText classes="text-[1.67rem] sm2:text-4xl md:text-5xl lg:text-6xl xl:text-7xl block flex min-w-full justify-start items-center">
+            <NeonText classes="homeTitle-shadow-text text-[1.67rem] sm2:text-4xl md:text-5xl lg:text-6xl xl:text-7xl block flex min-w-full justify-start items-center">
               Front-end Developer
             </NeonText>
           </FadeInDiv>
@@ -47,7 +48,10 @@ function Page() {
               classes="inline-block -mt-20 z-40 text-2xl md:text-3xl pl-0.5"
               tracking="tracking-widest"
             >
-              <TypoGraphyCustom text="Hello i am Mahdiyar" />
+              <TypoGraphyCustom
+                text="Hello I AM MAHDIYAR"
+                classes="introduction-shadow-text"
+              />
             </NeonText>
           </FadeUpDiv>
         </div>

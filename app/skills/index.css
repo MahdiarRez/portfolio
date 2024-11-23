@@ -1,0 +1,19 @@
+.skillsTitle-shadow-text {
+    position: relative;
+}
+
+.skillsTitle-shadow-text::before {
+    content: 'SKILLS';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: transparent;
+    -webkit-text-stroke: 3px #B377FF;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+.intro-shadow-text {
+    position: relative;
+    -webkit-text-stroke: 1px #B377FF;
+}

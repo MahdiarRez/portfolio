@@ -1,0 +1,30 @@
+.homeTitle-shadow-text {
+    position: relative;
+}
+
+.homeTitle-shadow-text::before {
+    content: 'FRONT-END DEVELOPER';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: transparent;
+    -webkit-text-stroke: 3px #B377FF;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+
+.introduction-shadow-text {
+    position: relative;
+}
+
+.introduction-shadow-text::before {
+    content: 'HELLO I AM MAHDIYAR';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: transparent;
+    -webkit-text-stroke: 3px #B377FF;
+    filter: blur(2px);
+    z-index: -1;
+}
