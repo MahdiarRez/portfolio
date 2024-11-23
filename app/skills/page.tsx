@@ -14,6 +14,8 @@ import "./index.css";
 import { ShootingStars } from "@/app/components/ui/ShootingStar";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import Link from "next/link";
+import ListSkills from "@/app/skills/components/ListSkills";
+import Modal from "@/app/skills/components/Modal";
 
 export const metadata: Metadata = {
   title: "Mahdiyar's Skills",
@@ -37,16 +39,16 @@ function Page() {
       />
       <Link
         href="/"
-        className={`${Bebas.className} flex flex-row items-center justify-center gap-0.5 absolute top-6 left-6 md:top-7 md:left-7 lg:top-11 lg:left-11 text-white hover:cursor-pointer hover:text-Pink group z-50 transition-colors duration-300`}
+        className={`${Bebas.className}  animate-fade animate-delay-[2000ms] animate-duration-500 flex flex-row items-center justify-center gap-0.5 absolute top-6 left-6 md:top-7 md:left-7 lg:top-11 lg:left-11 text-white hover:cursor-pointer hover:text-Pink group z-50 transition-colors duration-300`}
       >
         <MdOutlineArrowBackIosNew className="-mt-0.5 text-xl font-bold md:text-2xl group-hover:-translate-x-1 transition-transform duration-300" />
-        <span className="text-2xl sm2:text-2xl md:text-3xl text-center text-nowrap ">
+        <span className="text-2xl sm2:text-2xl md:text-3xl text-center text-nowrap">
           Go back
         </span>
       </Link>
       <ShootingStars />
       <div
-        className={`${deathStar.className} flex flex-col absolute top-24 items-center gap-y-1 md:gap-y-2 max-w-min`}
+        className={`${deathStar.className} flex flex-col absolute top-24  items-center gap-y-1 md:gap-y-2 max-w-min`}
       >
         <HeaderNeonText isReverse={false} hasWord={false} />
         <FadeInDiv delay={1}>
@@ -70,6 +72,8 @@ function Page() {
           />
         </span>
       </FadeUpDiv>
+      <ListSkills />
+      <Modal />
     </div>
   );
 }

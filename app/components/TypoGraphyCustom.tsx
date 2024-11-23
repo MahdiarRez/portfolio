@@ -20,7 +20,7 @@ export function TypoGraphyCustom({
 
   return (
     <TypewriterEffectSmooth
-      className={`text-inherit ${classes}`}
+      className={`text-inherit ${classes} overflow-hidden`}
       words={words}
     />
   );
