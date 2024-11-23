@@ -4,7 +4,7 @@ import { createNoise3D } from "simplex-noise";
 import { motion } from "framer-motion";
 
 interface VortexProps {
-  children?: any;
+  children?: never;
   className?: string;
   containerClassName?: string;
   particleCount?: number;
@@ -40,15 +40,15 @@ export const Vortex = (props: VortexProps) => {
   let tick = 0;
   const noise3D = createNoise3D();
   let particleProps = new Float32Array(particlePropsLength);
-  let center: [number, number] = [0, 0];
+  const center: [number, number] = [0, 0];
 
-  const HALF_PI: number = 0.5 * Math.PI;
+  // const HALF_PI: number = 0.5 * Math.PI;
   const TAU: number = 2 * Math.PI;
-  const TO_RAD: number = Math.PI / 180;
+  // const TO_RAD: number = Math.PI / 180;
   const rand = (n: number): number => n * Math.random();
   const randRange = (n: number): number => n - rand(2 * n);
   const fadeInOut = (t: number, m: number): number => {
-    let hm = 0.5 * m;
+    const hm = 0.5 * m;
     return Math.abs(((t + hm) % m) - hm) / hm;
   };
   const lerp = (n1: number, n2: number, speed: number): number =>
@@ -61,7 +61,7 @@ export const Vortex = (props: VortexProps) => {
       const ctx = canvas.getContext("2d");
 
       if (ctx) {
-        resize(canvas, ctx);
+        resize(canvas);
         initParticles();
         draw(canvas, ctx);
       }
@@ -84,14 +84,23 @@ export const Vortex = (props: VortexProps) => {
 
     let x, y, vx, vy, life, ttl, speed, radius, hue;
 
+    // eslint-disable-next-line prefer-const
     x = rand(canvas.width);
+    // eslint-disable-next-line prefer-const
     y = center[1] + randRange(rangeY);
+    // eslint-disable-next-line prefer-const
     vx = 0;
+    // eslint-disable-next-line prefer-const
     vy = 0;
+    // eslint-disable-next-line prefer-const
     life = 0;
+    // eslint-disable-next-line prefer-const
     ttl = baseTTL + rand(rangeTTL);
+    // eslint-disable-next-line prefer-const
     speed = baseSpeed + rand(rangeSpeed);
+    // eslint-disable-next-line prefer-const
     radius = baseRadius + rand(rangeRadius);
+    // eslint-disable-next-line prefer-const
     hue = baseHue + rand(rangeHue);
 
     particleProps.set([x, y, vx, vy, life, ttl, speed, radius, hue], i);
@@ -132,17 +141,29 @@ export const Vortex = (props: VortexProps) => {
       i9 = 8 + i;
     let n, x, y, vx, vy, life, ttl, speed, x2, y2, radius, hue;
 
+    // eslint-disable-next-line prefer-const
     x = particleProps[i];
+    // eslint-disable-next-line prefer-const
     y = particleProps[i2];
+    // eslint-disable-next-line prefer-const
     n = noise3D(x * xOff, y * yOff, tick * zOff) * noiseSteps * TAU;
+    // eslint-disable-next-line prefer-const
     vx = lerp(particleProps[i3], Math.cos(n), 0.5);
+    // eslint-disable-next-line prefer-const
     vy = lerp(particleProps[i4], Math.sin(n), 0.5);
+    // eslint-disable-next-line prefer-const
     life = particleProps[i5];
+    // eslint-disable-next-line prefer-const
     ttl = particleProps[i6];
+    // eslint-disable-next-line prefer-const
     speed = particleProps[i7];
+    // eslint-disable-next-line prefer-const
     x2 = x + vx * speed;
+    // eslint-disable-next-line prefer-const
     y2 = y + vy * speed;
+    // eslint-disable-next-line prefer-const
     radius = particleProps[i8];
+    // eslint-disable-next-line prefer-const
     hue = particleProps[i9];
 
     drawParticle(x, y, x2, y2, life, ttl, radius, hue, ctx);
@@ -155,6 +176,7 @@ export const Vortex = (props: VortexProps) => {
     particleProps[i4] = vy;
     particleProps[i5] = life;
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     (checkBounds(x, y, canvas) || life > ttl) && initParticle(i);
   };
 
@@ -185,10 +207,7 @@ export const Vortex = (props: VortexProps) => {
     return x > canvas.width || x < 0 || y > canvas.height || y < 0;
   };
 
-  const resize = (
-    canvas: HTMLCanvasElement,
-    ctx?: CanvasRenderingContext2D,
-  ) => {
+  const resize = (canvas: HTMLCanvasElement) => {
     const { innerWidth, innerHeight } = window;
 
     canvas.width = innerWidth;
@@ -231,10 +250,10 @@ export const Vortex = (props: VortexProps) => {
       const canvas = canvasRef.current;
       const ctx = canvas?.getContext("2d");
       if (canvas && ctx) {
-        resize(canvas, ctx);
+        resize(canvas);
       }
     });
-  }, []);
+  }, [resize, setup]);
 
   return (
     <div className={cn(props.containerClassName)}>
