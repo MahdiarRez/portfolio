@@ -24,7 +24,9 @@ function Page() {
         className="object-cover object-center h-full z-0"
       />
       <BackBtn />
-      <PagesTitle classes="contactTitle-shadow-text">Contact me</PagesTitle>
+      <PagesTitle classes="contactTitle-shadow-text text-5xl sm2:text-6xl">
+        Contact me
+      </PagesTitle>
       <ContactForm />
       <Modal />
     </div>

@@ -25,7 +25,7 @@ function PagesTitle({
       <FadeInDiv delay={1}>
         <NeonText
           clickable={false}
-          classes={`text-5xl sm2:text-6xl lg:text-7xl xl:text-8xl pl-1 ${classes}`}
+          classes={`lg:text-8xl xl:text-8xl pl-1 ${classes}`}
         >
           {children}
         </NeonText>

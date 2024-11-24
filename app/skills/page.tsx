@@ -20,14 +20,16 @@ const Bebas = Bebas_Neue({ subsets: ["latin"], weight: ["400"] });
 
 function Page() {
   return (
-    <div className="h-screen flex justify-center items-center overflow-hidden">
+    <div className="h-dvh flex justify-center items-center overflow-hidden">
       <Image
         src={backgroundImage}
         alt="bg-image"
         className="object-cover object-center h-full z-0"
       />
       <BackBtn />
-      <PagesTitle classes="skillsTitle-shadow-text">Skills</PagesTitle>
+      <PagesTitle classes="skillsTitle-shadow-text text-6xl sm2:text-7xl">
+        Skills
+      </PagesTitle>
       <FadeUpDiv className="absolute top-52 sm2:top-56 md:top-60 lg:top-72">
         <span
           className={`${Bebas.className} inline-block z-40 text-2xl sm2:text-3xl lg:tracking-wide md:text-4xl text-white stroke-text`}
