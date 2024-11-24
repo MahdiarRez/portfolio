@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 function Page() {
   return (
-    <div className="h-screen flex justify-center items-center overflow-hidden">
+    <div className="h-dvh flex justify-center items-center overflow-hidden">
       <Image
         src={backgroundImage}
         alt="bg-image"

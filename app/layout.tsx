@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-DarkBlue relative h-dvh">
+      <body className="bg-DarkBlue relative h-dvh overflow-hidden">
         <Socials />
         <PressEnter />
         <Cv />
