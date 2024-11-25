@@ -5,6 +5,7 @@ import Socials from "@/app/components/Socials";
 import PressEnter from "@/public/icons/PressEnter";
 import Cv from "@/app/components/Cv";
 import { ShootingStars } from "@/app/components/ui/ShootingStar";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Mahdiyar Rezaei",
@@ -23,6 +24,19 @@ export default function RootLayout({
         <PressEnter />
         <Cv />
         <ShootingStars />
+        <Toaster
+          position="bottom-center"
+          toastOptions={{
+            duration: 3000,
+            style: {
+              padding: "14px",
+              color: "white",
+              backgroundColor: "#070622",
+            },
+          }}
+          containerClassName={"mb-7"}
+          gutter={10}
+        />
         {children}
       </body>
     </html>

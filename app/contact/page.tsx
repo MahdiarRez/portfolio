@@ -1,6 +1,5 @@
 import React from "react";
 import type { Metadata } from "next";
-// import { Bebas_Neue } from "next/font/google";
 import Image from "next/image";
 import backgroundImage from "@/public/contactBackground.png";
 import Modal from "@/app/skills/components/Modal";
@@ -13,7 +12,6 @@ export const metadata: Metadata = {
   title: "Contact me",
   description: "Contact Mahdiyar",
 };
-// const Bebas = Bebas_Neue({ subsets: ["latin"], weight: ["400"] });
 
 function Page() {
   return (
