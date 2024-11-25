@@ -17,7 +17,7 @@ export function TypoGraphyCustom({
   };
 
   const words = createWordsArray(text);
-
+  console.log("words:", words);
   return (
     <TypewriterEffectSmooth
       className={`text-inherit ${classes} overflow-hidden`}

@@ -49,7 +49,7 @@ function Page() {
               tracking="tracking-widest"
             >
               <TypoGraphyCustom
-                text="Hello I AM MAHDIYAR"
+                text="Hello I AM MAHDIAR"
                 classes="introduction-shadow-text"
               />
             </NeonText>

@@ -1,14 +1,16 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { Bebas_Neue, Montserrat } from "next/font/google";
 import toast from "react-hot-toast";
 import clsx from "clsx";
+import FadeXdiv from "@/app/components/motions/FadeXdiv";
 
 const Bebas = Bebas_Neue({ subsets: ["latin"], weight: ["400"] });
 const Mont = Montserrat({ subsets: ["latin"], weight: ["400", "500"] });
 
 const ContactForm = () => {
+  const emailRef = useRef<HTMLInputElement>(null);
   const [formData, setFormData] = useState({
     email: "",
     subject: "",
@@ -32,7 +34,7 @@ const ContactForm = () => {
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    console.log("clicked");
+
     const isEmailValid = emailPattern.test(formData.email);
     const isSubjectValid = subjectPattern.test(formData.subject);
     const isMessageValid = messagePattern.test(formData.message);
@@ -70,7 +72,7 @@ const ContactForm = () => {
       .then(() => {
         const success = "Your message has been sent successfully!";
         toast.success(success, {
-          className: `${Mont.className} text-xs sm:text-sm md:text-base text-nowrap min-w-fit font-bold`,
+          className: `${Mont.className} text-xs sm:text-sm md:text-base text-nowrap min-w-fit font-medium tracking-tight`,
         });
         setFormData({ subject: "", email: "", message: "" });
         setFormIsLoading(false);
@@ -78,18 +80,24 @@ const ContactForm = () => {
       .catch(() => {
         const error = "Failed to send your message.";
         toast.error(error, {
-          className: `${Mont.className} text-xs sm:text-sm md:text-base text-nowrap min-w-fit font-bold`,
+          className: `${Mont.className} text-xs sm:text-sm md:text-base text-nowrap min-w-fit font-medium tracking-tight`,
         });
         setFormIsLoading(false);
       });
   };
 
   useEffect(() => {
+    setTimeout(() => {
+      emailRef.current?.focus();
+    }, 1900);
+  }, []);
+
+  useEffect(() => {
     Object.values(errors).map((item) => {
       if (item) {
         console.log(item);
         toast.error(item, {
-          className: `${Mont.className} text-xs sm:text-sm md:text-base text-nowrap min-w-fit font-bold`,
+          className: `${Mont.className} text-xs sm:text-sm md:text-base text-nowrap min-w-fit font-medium tracking-tight`,
         });
       }
     });
@@ -103,27 +111,36 @@ const ContactForm = () => {
         onSubmit={handleSubmit}
         className="flex flex-col items-center justify-center gap-3 lg:gap-4 w-full relative"
       >
-        <div className="flex flex-row items-center justify-between gap-5 lg:gap-1 w-full">
+        <FadeXdiv
+          delay={1}
+          leftOrRight={"right"}
+          className="flex flex-row items-center justify-between gap-5 lg:gap-1 w-full"
+        >
           <label className="text-white flex-1 text-center text-2xl lg:text-3xl text-nowrap">
             Email :
           </label>
           <input
-            className="bg-Pink flex-[2] sm:flex-[3] rounded-sm px-2.5 outline-none py-1 lg:py-2 lg:px-4 tracking-wide lg:text-lg bg-opacity-70 placeholder:text-gray-600 text-base focus:bg-opacity-100 w-full"
-            // type="email"
+            className="bg-Pink flex-[2] sm:flex-[3] rounded-sm px-2.5 outline-none py-1 lg:py-2 lg:px-4 tracking-wider lg:text-lg bg-opacity-70 placeholder:text-gray-600 text-base focus:bg-opacity-100 w-full"
+            type="email"
             name="email"
+            ref={emailRef}
             placeholder="Jaden123@example.com"
             value={formData.email}
             onChange={handleChange}
             required
             spellCheck={false}
           />
-        </div>
-        <div className="flex flex-row items-center justify-between gap-5 lg:gap-1 w-full">
+        </FadeXdiv>
+        <FadeXdiv
+          delay={1.4}
+          leftOrRight={"left"}
+          className="flex flex-row items-center justify-between gap-5 lg:gap-1 w-full"
+        >
           <label className="text-white flex-1 text-center text-2xl lg:text-3xl text-nowrap">
             Subject :
           </label>
           <input
-            className="bg-Pink flex-[2] sm:flex-[3] rounded-sm px-2.5 outline-none py-1 lg:py-2 lg:px-4 tracking-wide lg:text-lg bg-opacity-70 placeholder:text-gray-600 text-base focus:bg-opacity-100 w-full"
+            className="bg-Pink flex-[2] sm:flex-[3] rounded-sm px-2.5 outline-none py-1 lg:py-2 lg:px-4 tracking-wider lg:text-lg bg-opacity-70 placeholder:text-gray-600 text-base focus:bg-opacity-100 w-full"
             type="text"
             name="subject"
             placeholder="Hiring to company."
@@ -132,13 +149,17 @@ const ContactForm = () => {
             required
             spellCheck={false}
           />
-        </div>
-        <div className="flex flex-row items-center justify-between gap-5 lg:gap-1 w-full">
+        </FadeXdiv>
+        <FadeXdiv
+          delay={1.8}
+          leftOrRight={"right"}
+          className="flex flex-row items-center justify-between gap-5 lg:gap-1 w-full"
+        >
           <label className="text-white flex-1 text-center text-2xl lg:text-3xl text-nowrap self-start">
             Message :
           </label>
           <textarea
-            className="bg-Pink flex-[2] sm:flex-[3] rounded-sm min-h-16 lg:min-h-20 lg:max-h-28 max-h-24 self-end px-2.5 outline-none py-1 lg:py-2 lg:px-4 tracking-wide lg:text-lg bg-opacity-70 placeholder:text-gray-600 text-base focus:bg-opacity-100 w-full"
+            className="bg-Pink flex-[2] sm:flex-[3] rounded-sm min-h-16 lg:min-h-20 lg:max-h-28 max-h-24 self-end px-2.5 outline-none py-1 lg:py-2 lg:px-4 tracking-wider lg:text-lg bg-opacity-70 placeholder:text-gray-600 text-base focus:bg-opacity-100 w-full"
             name="message"
             placeholder="Your message..."
             value={formData.message}
@@ -146,7 +167,7 @@ const ContactForm = () => {
             required
             spellCheck={false}
           ></textarea>
-        </div>
+        </FadeXdiv>
         {formData.subject && formData.message && formData.email && (
           <button
             disabled={formIsLoading}
@@ -163,8 +184,6 @@ const ContactForm = () => {
           </button>
         )}
       </form>
-      {/*{successMessage && <p style={{ color: "green" }}>{successMessage}</p>}*/}
-      {/*{errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}*/}
     </div>
   );
 };

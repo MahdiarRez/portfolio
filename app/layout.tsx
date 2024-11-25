@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-DarkBlue relative h-dvh overflow-hidden">
-        <Socials />
+        <Socials isForMobile={false} />
         <PressEnter />
         <Cv />
         <ShootingStars />
@@ -29,12 +29,12 @@ export default function RootLayout({
           toastOptions={{
             duration: 3000,
             style: {
-              padding: "14px",
-              color: "white",
-              backgroundColor: "#070622",
+              padding: "10px",
+              color: "#070622",
+              backgroundColor: "white",
+              marginBottom: "10px",
             },
           }}
-          containerClassName={"mb-7"}
           gutter={10}
         />
         {children}

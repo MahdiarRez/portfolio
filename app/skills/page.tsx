@@ -41,7 +41,9 @@ function Page() {
         </span>
       </FadeUpDiv>
       <ListSkills />
-      <Modal />
+      <Modal>
+        Hover on skill <br /> to see the website !
+      </Modal>
     </div>
   );
 }

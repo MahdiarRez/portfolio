@@ -7,6 +7,7 @@ import BackBtn from "@/app/components/BackBtn";
 import PagesTitle from "@/app/components/common/PagesTitle";
 import "./index.css";
 import ContactForm from "@/app/contact/components/ContactForm";
+import Socials from "@/app/components/Socials";
 
 export const metadata: Metadata = {
   title: "Contact me",
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
 
 function Page() {
   return (
-    <div className="h-dvh flex justify-center items-center overflow-hidden">
+    <div className="h-dvh flex justify-center items-center overflow-hidden relative">
       <Image
         src={backgroundImage}
         alt="bg-image"
@@ -26,7 +27,10 @@ function Page() {
         Contact me
       </PagesTitle>
       <ContactForm />
-      <Modal />
+      <Socials isForMobile={true} />
+      <Modal>
+        Have questions or ideas ? <br /> Don’t hesitate to get in touch !{" "}
+      </Modal>
     </div>
   );
 }
