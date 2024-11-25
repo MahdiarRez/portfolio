@@ -17,7 +17,10 @@ function HeaderNeonText({
           leftOrRight="left"
           className="flex flex-row items-center text-nowrap justify-center gap-3 md:gap-4 w-full px-0.5"
         >
-          <span className="text-nowrap text-sm md:text-lg font-normal tracking-wider text-Pink">
+          <span
+            className="text-nowrap text-sm md:text-lg font-normal tracking-wider text-Pink"
+            style={{ textShadow: "0px 0px 7px #B377FF" }}
+          >
             {skill}
           </span>
           <div
@@ -31,7 +34,10 @@ function HeaderNeonText({
         leftOrRight="right"
         className="flex flex-row-reverse items-center text-nowrap justify-center gap-3 md:gap-4 w-full px-0.5"
       >
-        <span className="text-nowrap text-sm md:text-lg font-normal tracking-wider text-Pink">
+        <span
+          className="text-nowrap text-sm md:text-lg font-normal tracking-wider text-Pink"
+          style={{ textShadow: "0px 0px 7px #B377FF" }}
+        >
           {skill}
         </span>
         <div

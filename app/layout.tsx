@@ -33,6 +33,8 @@ export default function RootLayout({
               color: "#070622",
               backgroundColor: "white",
               marginBottom: "10px",
+              borderRadius: "0.125rem",
+              boxShadow: "0px 0px 8px #CEB7FF",
             },
           }}
           gutter={10}

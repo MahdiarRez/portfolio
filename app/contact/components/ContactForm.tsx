@@ -89,7 +89,7 @@ const ContactForm = () => {
   useEffect(() => {
     setTimeout(() => {
       emailRef.current?.focus();
-    }, 1900);
+    }, 2500);
   }, []);
 
   useEffect(() => {

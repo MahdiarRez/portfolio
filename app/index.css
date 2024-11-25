@@ -21,7 +21,7 @@
 .introduction-shadow-text::before {
     content: 'HELLO I AM MAHDIAR';
     position: absolute;
-    left: 0;
+    left: 2px;
     top: 0;
     color: transparent;
     -webkit-text-stroke: 2px #B377FF;
