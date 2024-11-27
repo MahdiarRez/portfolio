@@ -103,7 +103,7 @@ export const ModalBody = ({
           <motion.div
             ref={modalRef}
             className={cn(
-              "min-h-[50%] max-h-[90%] md:max-w-xl max-w-xs sm2:max-w-sm sm:max-w-md border border-transparent dark:border-neutral-800 rounded-md relative z-50 flex flex-col flex-1 overflow-hidden",
+              "min-h-[50%] sm:min-h-[54%] max-h-[90%] md:max-w-xl max-w-xs sm2:max-w-sm sm:max-w-md border border-transparent dark:border-neutral-800 rounded-md relative z-50 flex flex-col flex-1 overflow-hidden",
               className,
             )}
             initial={{
@@ -200,12 +200,12 @@ const CloseIcon = () => {
   return (
     <button
       onClick={() => setOpen(false)}
-      className="absolute top-4 right-4 group"
+      className="absolute top-4 right-4 group transition-colors duration-300 cursor-pointer ease-in-out p-2 rounded-md hover:bg-neutral-800"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        width="26"
+        height="26"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
