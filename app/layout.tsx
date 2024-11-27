@@ -35,6 +35,7 @@ export default function RootLayout({
               marginBottom: "10px",
               borderRadius: "0.125rem",
               boxShadow: "0px 0px 8px #CEB7FF",
+              cursor: "default",
             },
           }}
           gutter={10}

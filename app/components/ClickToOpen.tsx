@@ -1,20 +1,9 @@
 import React from "react";
 import NeonText from "@/app/components/NeonText";
 
-interface ClickToOpenProps {
-  descriptionIsOpen: boolean;
-  setDescriptionIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-function ClickToOpen({
-  descriptionIsOpen,
-  setDescriptionIsOpen,
-}: ClickToOpenProps) {
+function ClickToOpen() {
   return (
-    <div
-      className="flex justify-center items-center py-7 px-10 cursor-pointer hover:brightness-110 transition-all duration-300 "
-      onClick={() => setDescriptionIsOpen(!descriptionIsOpen)}
-    >
+    <div className="flex justify-center items-center py-6 px-9 cursor-pointer  transition-all duration-300 ">
       <NeonText
         clickable={true}
         classes={"text-2xl font-bold text-center sm:text-3xl"}
