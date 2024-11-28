@@ -48,6 +48,15 @@ export const ModalTrigger = ({
   className?: string;
 }) => {
   const { setOpen } = useModal();
+
+  useEffect(() => {
+    window.addEventListener("keyup", (e) => {
+      if (e.code === "Enter") setOpen(true);
+      if (e.code === "Escape") setOpen(false);
+      console.log(e.code);
+    });
+  }, [setOpen]);
+
   return (
     <button
       className={cn(

@@ -12,7 +12,6 @@ import localFont from "next/font/local";
 import { Montserrat } from "next/font/google";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 import { ShooterCart } from "@/app/components/ui/ShooterCart";
 import MahdiyarPicture from "@/app/components/MahdiyarPicture";
 
@@ -43,8 +42,8 @@ export function ModalCustome() {
               <p
                 className={`${Mont.className} text-center text-sm sm2:text-base font-medium md:text-lg`}
               >
-                I am a skilled Front-End Developer with expertise in React and
-                Next.js. With a strong focus on creating intuitive and
+                Hi i am Mahdiyar, skilled Front-End Developer with expertise in
+                React and Next.js. With a strong focus on creating intuitive and
                 responsive web applications, I leverage my knowledge of modern
                 JavaScript frameworks to build seamless user experiences.
               </p>

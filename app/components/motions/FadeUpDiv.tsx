@@ -5,9 +5,11 @@ import { motion } from "framer-motion";
 function FadeUpDiv({
   children,
   className,
+  delay = 1,
 }: {
   children: React.ReactNode;
   className?: string;
+  delay?: number;
 }) {
   return (
     <motion.div
@@ -20,7 +22,7 @@ function FadeUpDiv({
         type: "spring",
         stiffness: "100",
         damping: 8,
-        delay: 1,
+        delay: delay,
       }}
     >
       {children}
