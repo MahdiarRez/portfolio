@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 const {
   default: flattenColorPalette,
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
 } = require("tailwindcss/lib/util/flattenColorPalette");
 export default {
   content: [
@@ -19,8 +20,22 @@ export default {
         Purple: "#B377FF",
         DarkBlue: "#070622",
       },
+      animation: {
+        "meteor-effect": "meteor 5s linear infinite",
+      },
+      keyframes: {
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: "0",
+          },
+        },
+      },
     },
   },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("tailwindcss-animated"), addVariablesForColors],
 } satisfies Config;
 
