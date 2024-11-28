@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { ShooterCart } from "@/app/components/ui/ShooterCart";
+import MahdiyarPicture from "@/app/components/MahdiyarPicture";
 
 const deathStar = localFont({
   src: "../../public/fonts/DeathStar.otf",
@@ -126,15 +127,7 @@ export function ModalNav() {
           </motion.button>
         </Link>
       </ModalFooter>
-      <Image
-        src={"/mahdiyarPic.jpeg"}
-        alt="Mahdiyar picture"
-        className={
-          "max-w-[170px] cursor-default md:max-w-[194px] object-cover object-bottom flex-[3] h-fit border border-solid border-neutral-700 rounded-md overflow-hidden"
-        }
-        width={200}
-        height={200}
-      />
+      <MahdiyarPicture />
     </motion.div>
   );
 }
