@@ -48,8 +48,13 @@ export const ModalTrigger = ({
   className?: string;
 }) => {
   const { setOpen } = useModal();
+  const [isBtnEnabled, setIsBtnEnabled] = React.useState(false);
 
   useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsBtnEnabled(true);
+    }, 5000);
+
     setTimeout(() => {
       window.addEventListener("keyup", (e) => {
         if (e.code === "Enter") setOpen(true);
@@ -57,19 +62,24 @@ export const ModalTrigger = ({
       });
     }, 5000);
 
-    return window.removeEventListener("keyup", (e) => {
-      if (e.code === "Enter") setOpen(true);
-      if (e.code === "Escape") setOpen(false);
-    });
-  }, [setOpen]);
-
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("keyup", (e) => {
+        if (e.code === "Enter") setOpen(true);
+        if (e.code === "Escape") setOpen(false);
+      });
+    };
+  }, [setOpen, setIsBtnEnabled]);
+  console.log(isBtnEnabled);
   return (
     <button
       className={cn(
         "px-4 py-2 rounded-md text-black dark:text-white text-center relative overflow-hidden",
         className,
       )}
+      disabled={!isBtnEnabled}
       onClick={() => {
+        console.log("clicked", isBtnEnabled);
         setOpen(true);
       }}
     >
@@ -121,7 +131,7 @@ export const ModalBody = ({
           <motion.div
             ref={modalRef}
             className={cn(
-              "min-h-[50%] sm:min-h-[54%] max-h-[90%] md:max-w-lg max-w-xs sm2:max-w-sm  border border-transparent dark:border-neutral-800 rounded-md relative z-50 flex flex-col flex-1 overflow-hidden",
+              "max-h-[431px] min-h-[431px] md:max-w-lg max-w-xs sm2:max-w-sm  border border-transparent dark:border-neutral-800 rounded-md relative z-50 flex flex-col flex-1 overflow-hidden",
               className,
             )}
             initial={{

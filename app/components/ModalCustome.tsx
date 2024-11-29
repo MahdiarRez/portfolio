@@ -32,7 +32,7 @@ export function ModalCustome() {
           <ClickToOpen />
         </ModalTrigger>
         <ModalBody>
-          <ModalContent className="bg-DarkBlue cursor-default overflow-hidden relative">
+          <ModalContent className="bg-DarkBlue cursor-default overflow-hidden relative ">
             <h4
               className={`${deathStar.className} text-2xl md:text-3xl text-neutral-600 z-40 xl:text-4xl dark:text-neutral-100 font-bold text-center tracking-wider mb-4`}
             >
@@ -42,10 +42,11 @@ export function ModalCustome() {
               <p
                 className={`${Mont.className} text-center text-sm sm2:text-base font-medium md:text-lg`}
               >
-                Hi i am Mahdiyar, skilled Front-End Developer with expertise in
-                React and Next.js. With a strong focus on creating intuitive and
-                responsive web applications, I leverage my knowledge of modern
-                JavaScript frameworks to build seamless user experiences.
+                Hi i am skilled Front-End Developer with expertise in React,
+                Next JS and Typescript. With a strong focus on creating
+                intuitive and responsive web applications, I leverage my
+                knowledge of modern JavaScript frameworks to build seamless user
+                experiences.
               </p>
             </div>
             <ShooterCart />
@@ -66,7 +67,7 @@ export function ModalNav() {
         type: "spring",
         stiffness: 100,
       }}
-      className="min-h-[50%] sm:max-h-[54%] sm:min-h-[54%] flex flex-col gap-5 ml-5 z-50"
+      className="min-h-[430px]  flex flex-col gap-5 ml-5 z-50 max-h-[431px]"
       id="ModalNav"
     >
       <ModalFooter
@@ -77,7 +78,7 @@ export function ModalNav() {
         >
           Get in touch
         </button>
-        <Link href="/">
+        <Link href="/projects">
           <motion.button
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
