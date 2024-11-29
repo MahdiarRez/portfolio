@@ -1,7 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
-import backgroundImage from "@/public/contactBackground.png";
 import Modal from "@/app/skills/components/Modal";
 import BackBtn from "@/app/components/BackBtn";
 import PagesTitle from "@/app/components/common/PagesTitle";
@@ -18,9 +17,11 @@ function Page() {
   return (
     <div className="h-dvh flex justify-center items-center overflow-hidden relative">
       <Image
-        src={backgroundImage}
+        src="/contactBackground.png"
         alt="bg-image"
-        className="object-cover object-center h-full z-0"
+        width={1000}
+        height={700}
+        className="object-cover object-center h-full z-0 w-full"
       />
       <BackBtn />
       <PagesTitle classes="contactTitle-shadow-text text-5xl sm2:text-6xl">

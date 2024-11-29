@@ -13,6 +13,7 @@ function MahdiyarPicture() {
       <Image
         src={"/mahdiyarPic.jpeg"}
         alt="Mahdiyar picture"
+        id="2"
         className={
           "max-w-[190px] hover:scale-125 transition-transform duration-300 md:max-w-[194px] object-cover object-bottom h-min overflow-hidden"
         }

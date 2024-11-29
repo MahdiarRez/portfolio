@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import backgroundImage from "@/public/skillsBackground.png";
 import type { Metadata } from "next";
 import { TypoGraphyCustom } from "@/app/components/TypoGraphyCustom";
 import FadeUpDiv from "@/app/components/motions/FadeUpDiv";
@@ -22,9 +21,11 @@ function Page() {
   return (
     <div className="h-dvh flex justify-center items-center overflow-hidden">
       <Image
-        src={backgroundImage}
+        src="/skillsBackground.png"
+        width={1000}
+        height={800}
         alt="bg-image"
-        className="object-cover object-center h-full z-0"
+        className="object-cover object-center h-full z-0 w-full"
       />
       <BackBtn />
       <PagesTitle classes="skillsTitle-shadow-text text-6xl sm2:text-7xl">

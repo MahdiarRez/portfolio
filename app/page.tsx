@@ -1,5 +1,4 @@
 import React from "react";
-import backgroundImage from "../public/homeBackground.png";
 import Image from "next/image";
 import localFont from "next/font/local";
 import NeonText from "@/app/components/NeonText";
@@ -22,9 +21,11 @@ function Page() {
   return (
     <div className="h-dvh">
       <Image
-        src={backgroundImage}
+        src="/homeBackground.png"
         alt="bg-image"
-        className="object-cover h-full z-0"
+        width={1000}
+        height={8000}
+        className="object-cover h-full z-0 w-full"
       />
       <ShootingStars />
       <Navbar />

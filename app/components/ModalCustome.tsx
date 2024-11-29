@@ -48,7 +48,6 @@ export function ModalCustome() {
                 JavaScript frameworks to build seamless user experiences.
               </p>
             </div>
-            {/*<BackgroundBeams />*/}
             <ShooterCart />
           </ModalContent>
         </ModalBody>
@@ -68,13 +67,11 @@ export function ModalNav() {
         stiffness: 100,
       }}
       className="min-h-[50%] sm:max-h-[54%] sm:min-h-[54%] flex flex-col gap-5 ml-5 z-50"
+      id="ModalNav"
     >
       <ModalFooter
         className={` font-bold gap-3 cursor-default justify-center overflow-hidden`}
       >
-        {/*<button className="px-2 py-1 bg-gray-200 text-black dark:bg-transparent dark:border-Pink dark:text-Pink border border-gray-300 rounded-[0.235rem] text-base sm:text-lg sm2:tracking-wide w-28 dark:hover:bg-Purple dark:hover:border-Purple dark:hover:text-DarkBlue ease-in-out transition-colors duration-300">*/}
-        {/*  Close*/}
-        {/*</button>*/}
         <button
           className={`${deathStar.className} sm:hidden bg-DarkBlue text-Pink dark:bg-Pink dark:text-DarkBlue text-base sm:text-lg sm2:tracking-wide px-2 py-1 rounded-[0.235rem] border dark:border-Pink  w-36 tracking-wide dark:hover:border-Purple dark:hover:bg-Purple ease-in-out transition-colors duration-300`}
         >

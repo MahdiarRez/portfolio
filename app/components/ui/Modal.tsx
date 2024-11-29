@@ -50,10 +50,16 @@ export const ModalTrigger = ({
   const { setOpen } = useModal();
 
   useEffect(() => {
-    window.addEventListener("keyup", (e) => {
+    setTimeout(() => {
+      window.addEventListener("keyup", (e) => {
+        if (e.code === "Enter") setOpen(true);
+        if (e.code === "Escape") setOpen(false);
+      });
+    }, 5000);
+
+    return window.removeEventListener("keyup", (e) => {
       if (e.code === "Enter") setOpen(true);
       if (e.code === "Escape") setOpen(false);
-      console.log(e.code);
     });
   }, [setOpen]);
 
@@ -63,7 +69,9 @@ export const ModalTrigger = ({
         "px-4 py-2 rounded-md text-black dark:text-white text-center relative overflow-hidden",
         className,
       )}
-      onClick={() => setOpen(true)}
+      onClick={() => {
+        setOpen(true);
+      }}
     >
       {children}
     </button>
@@ -177,6 +185,7 @@ export const ModalFooter = ({
 }) => {
   return (
     <div
+      id="1"
       className={cn(
         "flex flex-col justify-center items-center  border border-transparent dark:border-neutral-800 rounded-md py-4 md:py-6 px-4 bg-DarkBlue",
         className,
@@ -242,8 +251,13 @@ export const useOutsideClick = (
 ) => {
   useEffect(() => {
     const listener = (event: MouseEvent | TouchEvent) => {
-      // DO NOTHING if the element being clicked is the target element or their children
-      if (!ref.current || ref.current.contains(event.target as Node)) {
+      const target = event?.target as HTMLElement;
+      console.log(target.id);
+      if (
+        !ref.current ||
+        ref.current.contains(event.target as Node) ||
+        Boolean(target.id)
+      ) {
         return;
       }
       callback(event);
