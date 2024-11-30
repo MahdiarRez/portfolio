@@ -1,9 +1,8 @@
 "use client";
 import React from "react";
 import FadeUpDiv from "@/app/components/motions/FadeUpDiv";
-import { ModalCustome } from "@/app/components/ModalCustome";
 
-function Description() {
+function Description({ children }: { children: React.ReactNode }) {
   return (
     <FadeUpDiv
       delay={3.7}
@@ -13,7 +12,7 @@ function Description() {
     >
       <div className="relative flex group justify-center items-center cursor-pointer">
         <Stroke1 />
-        <ModalCustome />
+        {children}
         <Stroke2 />
       </div>
     </FadeUpDiv>

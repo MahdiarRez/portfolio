@@ -49,6 +49,12 @@ export function ModalCustome() {
                 experiences.
               </p>
             </div>
+            <Link
+              href="/contact"
+              className={`${deathStar.className} text-center text-Pink px-4 py-1 border-Pink border border-solid rounded-[0.235rem] focus:text-white focus:border-white transition-colors duration-300 mx-7 bg-transparent tracking-wider mt-3 sm:hidden`}
+            >
+              Get in touch
+            </Link>
             <ShooterCart />
           </ModalContent>
         </ModalBody>
@@ -71,13 +77,8 @@ export function ModalNav() {
       id="ModalNav"
     >
       <ModalFooter
-        className={` font-bold gap-3 cursor-default justify-center overflow-hidden`}
+        className={`font-bold gap-3 cursor-default justify-center overflow-hidden hidden sm:flex`}
       >
-        <button
-          className={`${deathStar.className} sm:hidden bg-DarkBlue text-Pink dark:bg-Pink dark:text-DarkBlue text-base sm:text-lg sm2:tracking-wide px-2 py-1 rounded-[0.235rem] border dark:border-Pink  w-36 tracking-wide dark:hover:border-Purple dark:hover:bg-Purple ease-in-out transition-colors duration-300`}
-        >
-          Get in touch
-        </button>
         <Link href="/projects">
           <motion.button
             initial={{ opacity: 0, x: 50 }}

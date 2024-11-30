@@ -5,7 +5,7 @@ import TooltipCustom from "@/app/components/TooltipCustom";
 function MahdiyarPicture() {
   return (
     <div
-      className="flex-[3] overflow-hidden cursor-default border border-solid border-neutral-700 rounded-md"
+      className="flex-[3] overflow-hidden cursor-default border border-solid border-neutral-700 rounded-md sm:block hidden"
       data-tooltip-id="myPic"
       data-tooltip-place="bottom"
       data-tooltip-content="Me"

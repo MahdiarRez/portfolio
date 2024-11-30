@@ -11,6 +11,7 @@ import { SparklesPreview } from "@/app/components/SnowHeader";
 import { TypoGraphyCustom } from "@/app/components/TypoGraphyCustom";
 import { ShootingStars } from "@/app/components/ui/ShootingStar";
 import "./index.css";
+import { ModalCustome } from "@/app/components/ModalCustome";
 
 const deathStar = localFont({
   src: "../public/fonts/DeathStar.otf",
@@ -57,7 +58,9 @@ function Page() {
           </FadeUpDiv>
         </div>
       </main>
-      <Description />
+      <Description>
+        <ModalCustome />
+      </Description>
     </div>
   );
 }
