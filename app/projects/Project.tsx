@@ -41,10 +41,7 @@ function Project({ children }: { children: React.ReactNode }) {
         />
       </TypoGraphySpan>
       <Description>
-        <ModalProject
-          name={projectsList[currProjectIndex].name}
-          description={projectsList[currProjectIndex].description}
-        />
+        <ModalProject project={projectsList[currProjectIndex]} />
       </Description>
     </>
   );

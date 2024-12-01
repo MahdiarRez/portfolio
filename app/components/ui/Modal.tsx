@@ -10,6 +10,7 @@ import React, {
   useState,
 } from "react";
 import { ModalNav } from "@/app/components/ModalCustome";
+import ProjectNav from "@/app/projects/ProjectNav";
 
 interface ModalContextType {
   open: boolean;
@@ -91,9 +92,17 @@ export const ModalTrigger = ({
 export const ModalBody = ({
   children,
   className,
+  isProjectModal = false,
+  technos,
+  github,
+  demo,
 }: {
   children: ReactNode;
   className?: string;
+  isProjectModal?: boolean;
+  technos?: string[];
+  github?: string;
+  demo?: string;
 }) => {
   const { open } = useModal();
 
@@ -160,7 +169,15 @@ export const ModalBody = ({
             <CloseIcon />
             {children}
           </motion.div>
-          <ModalNav />
+          {isProjectModal ? (
+            <ProjectNav
+              technos={technos as string[]}
+              github={github as string}
+              demo={demo as string}
+            />
+          ) : (
+            <ModalNav />
+          )}
         </motion.div>
       )}
     </AnimatePresence>
@@ -262,7 +279,6 @@ export const useOutsideClick = (
   useEffect(() => {
     const listener = (event: MouseEvent | TouchEvent) => {
       const target = event?.target as HTMLElement;
-      console.log(target.id);
       if (
         !ref.current ||
         ref.current.contains(event.target as Node) ||

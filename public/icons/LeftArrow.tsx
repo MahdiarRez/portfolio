@@ -29,7 +29,7 @@ function LeftArrow({
         viewBox="0 0 54 105"
         fill="none"
         className={clsx(
-          `size-16 lg:size-20 xl:size-24  group transition-transform duration-300 max-w-fit `,
+          `size-16 lg:size-20 xl:size-24  group transition-transform duration-300 max-w-fit`,
           {
             "rotate-180": direction === "right",
             "rotate-0 sm2:hover:-translate-x-1": direction === "left",
@@ -45,7 +45,7 @@ function LeftArrow({
         <path
           d="M52.3014 0V1.6063M52.3014 1.6063V102L2 51.8031L52.3014 1.6063Z"
           className={clsx(` transition-colors duration-300`, {
-            "group-hover:stroke-white stroke-Pink": !disable,
+            "group-hover:stroke-white stroke-Pink ": !disable,
             "stroke-gray-400": disable,
           })}
           strokeWidth="2"
@@ -60,7 +60,7 @@ function LeftArrow({
         <path
           d="M46.0137 15.3699V16.4921M46.0137 16.4921V86.6301L10.3835 51.5611L46.0137 16.4921Z"
           className={clsx(` transition-colors duration-300`, {
-            "group-hover:stroke-white stroke-Pink": !disable,
+            "group-hover:stroke-white stroke-Pink ": !disable,
             "stroke-gray-400": disable,
           })}
           strokeWidth="2"
