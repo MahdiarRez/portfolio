@@ -52,6 +52,7 @@ function ModalProject({ project }: { project: ProjectType }) {
                 {description}
               </p>
             </div>
+            <button className="text-white">GEI</button>
             <ShooterCart />
           </ModalContent>
         </ModalBody>

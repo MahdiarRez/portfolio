@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ShooterCart } from "@/app/components/ui/ShooterCart";
 import MahdiyarPicture from "@/app/components/MahdiyarPicture";
+import Image from "next/image";
 
 const deathStar = localFont({
   src: "../../public/fonts/DeathStar.otf",
@@ -34,13 +35,13 @@ export function ModalCustome() {
         <ModalBody>
           <ModalContent className="bg-DarkBlue cursor-default overflow-hidden relative ">
             <h4
-              className={`${deathStar.className} text-2xl md:text-3xl text-neutral-600 z-40 xl:text-4xl dark:text-neutral-100 font-bold text-center tracking-wider mb-4`}
+              className={`${deathStar.className} text-2xl sm:text-3xl mb-4 text-neutral-600 z-40 md:text-4xl dark:text-neutral-100 font-bold text-center tracking-wider `}
             >
               About me
             </h4>
             <div className="py-2.5 flex flex-wrap items-start justify-start max-w-sm md:max-w-full mx-auto text-white ">
               <p
-                className={`${Mont.className} text-center text-sm sm2:text-base font-medium md:text-lg`}
+                className={`${Mont.className} text-center text-sm sm2:text-base font-medium sm:text-lg`}
               >
                 Hi i am skilled Front-End Developer with expertise in React,
                 Next JS and Typescript. With a strong focus on creating
@@ -49,12 +50,21 @@ export function ModalCustome() {
                 experiences.
               </p>
             </div>
-            <Link
-              href="/contact"
-              className={`${deathStar.className} text-center text-Pink px-4 py-1 border-Pink border border-solid rounded-[0.235rem] focus:text-white focus:border-white transition-colors duration-300 mx-7 bg-transparent tracking-wider mt-3 sm:hidden`}
-            >
-              Get in touch
-            </Link>
+            <div className="flex mt-3 flex-row-reverse gap-3 w-full items-center justify-center sm:hidden">
+              <Image
+                width={28}
+                height={28}
+                className="size-12 object-cover rounded-[0.235rem] border border-solid border-neutral-700"
+                src="/mahdiyarPic.jpeg"
+                alt="mahdiyar picture"
+              />
+              <Link
+                href="/contact"
+                className={`${deathStar.className} text-center text-Pink px-2.5 py-3 text-sm text-nowrap border-Pink border border-solid rounded-[0.235rem] focus:text-white focus:border-white transition-colors duration-300 bg-transparent tracking-wider`}
+              >
+                Get in touch with me
+              </Link>
+            </div>
             <ShooterCart />
           </ModalContent>
         </ModalBody>

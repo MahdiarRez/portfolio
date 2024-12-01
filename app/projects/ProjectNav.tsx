@@ -29,7 +29,7 @@ function ProjectNav({
         type: "spring",
         stiffness: 100,
       }}
-      className="min-h-[430px] flex flex-col gap-5 ml-5 z-50 max-h-[431px]"
+      className="min-h-[430px] hidden sm:flex sm:flex-col gap-5 ml-5 z-50 max-h-[431px]"
     >
       <ModalFooter
         className={`font-bold gap-3 cursor-default justify-center overflow-hidden hidden sm:flex`}
