@@ -32,60 +32,60 @@ function ListSkills() {
         React Query
       </ItemSkill>
       <ItemSkill
-        i={12}
+        i={6}
         color="hover:text-green-500"
         url="https://react-leaflet.js.org/"
       >
         React Leaflet
       </ItemSkill>
       <ItemSkill
-        i={6}
+        i={7}
         color="hover:text-purple-500"
         url="https://redux.js.org/"
       >
         Redux
       </ItemSkill>
-      <ItemSkill i={7} color="hover:text-blue-300" url="https://react.dev/">
+      <ItemSkill i={8} color="hover:text-blue-300" url="https://react.dev/">
         Context API
       </ItemSkill>
-      <ItemSkill i={12} color="hover:text-yellow-400" url="https://motion.dev/">
+      <ItemSkill i={9} color="hover:text-yellow-400" url="https://motion.dev/">
         Framer motion
       </ItemSkill>
       <ItemSkill
-        i={8}
+        i={10}
         color="hover:text-blue-700"
         url="https://tailwindcss.com/"
       >
         Tailwind CSS
       </ItemSkill>
       <ItemSkill
-        i={9}
+        i={11}
         color="hover:text-pink-300"
         url="https://styled-components.com/"
       >
         Styled comp
       </ItemSkill>
-      <ItemSkill i={10} color="hover:text-green-500" url="https://daisyui.com/">
+      <ItemSkill i={12} color="hover:text-green-500" url="https://daisyui.com/">
         DaisyUi
       </ItemSkill>
       <ItemSkill
-        i={11}
+        i={13}
         color="hover:text-black"
         url="https://www.radix-ui.com/"
       >
         RadixUi
       </ItemSkill>
       <ItemSkill
-        i={12}
+        i={14}
         color="hover:text-black"
         url="https://ui.aceternity.com/"
       >
         AceternityUi
       </ItemSkill>
-      <ItemSkill i={12} color="hover:text-white" url="https://ui.shadcn.com/">
+      <ItemSkill i={15} color="hover:text-white" url="https://ui.shadcn.com/">
         ShadCn
       </ItemSkill>
-      <ItemSkill i={12} color="hover:text-Purple" url="https://github.com/">
+      <ItemSkill i={16} color="hover:text-Purple" url="https://github.com/">
         Git & Github
       </ItemSkill>
     </div>

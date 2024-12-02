@@ -58,6 +58,8 @@ function ModalProject({ project }: { project: ProjectType }) {
             <div className="bg-DarkBlue hidden sm:flex w-full relative max-h-32 h-32 overflow-hidden border border-solid border-neutral-700 rounded-md cursor-default">
               <Image
                 src={imgUrl}
+                placeholder={"blur"}
+                blurDataURL={imgUrl}
                 alt="project-pic"
                 width={380}
                 height={380}
