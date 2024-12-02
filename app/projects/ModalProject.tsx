@@ -60,6 +60,7 @@ function ModalProject({ project }: { project: ProjectType }) {
                 src={imgUrl}
                 placeholder={"blur"}
                 blurDataURL={imgUrl}
+                fill
                 alt="project-pic"
                 width={380}
                 height={380}
