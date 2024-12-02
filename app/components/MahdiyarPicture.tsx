@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import TooltipCustom from "@/app/components/TooltipCustom";
+import pic from "../../public/mahdiyarPic.jpeg";
 
 function MahdiyarPicture() {
   return (
@@ -11,14 +12,13 @@ function MahdiyarPicture() {
       data-tooltip-content="Me"
     >
       <Image
-        src={"/mahdiyarPic.jpeg"}
+        src={pic}
         alt="Mahdiyar picture"
         id="2"
         className={
           "max-w-[190px] hover:scale-125 transition-transform duration-300 md:max-w-[194px] object-cover object-bottom h-min overflow-hidden"
         }
-        width={200}
-        height={300}
+        placeholder={"blur"}
       />
       <TooltipCustom id="myPic" />
     </div>
