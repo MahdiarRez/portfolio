@@ -7,7 +7,7 @@ import PagesTitle from "@/app/components/common/PagesTitle";
 import "./index.css";
 import ContactForm from "@/app/contact/components/ContactForm";
 import Socials from "@/app/components/Socials";
-import bg from "../../public/contactBackground.png";
+import bg from "../../public/contactBackground.jpg";
 export const metadata: Metadata = {
   title: "Contact me",
   description: "Contact Mahdiyar",

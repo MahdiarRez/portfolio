@@ -5,7 +5,7 @@ import "./index.css";
 import Project from "@/app/projects/Project";
 import BackBtn from "@/app/components/BackBtn";
 import PagesTitle from "@/app/components/common/PagesTitle";
-import bg from "../../public/projectsBackground.png";
+import bg from "../../public/projectsBackground.jpg";
 
 export const metadata: Metadata = {
   title: "Skills",

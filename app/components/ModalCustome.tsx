@@ -20,8 +20,6 @@ const deathStar = localFont({
   display: "swap",
 });
 
-// const Bebas = Bebas_Neue({ subsets: ["latin"], weight: ["400"] });
-
 const Mont = Montserrat({ subsets: ["latin"], weight: ["400", "500"] });
 
 export function ModalCustome() {

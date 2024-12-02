@@ -9,7 +9,7 @@ import ListSkills from "@/app/skills/components/ListSkills";
 import Modal from "@/app/skills/components/Modal";
 import BackBtn from "@/app/components/BackBtn";
 import PagesTitle from "@/app/components/common/PagesTitle";
-import bg from "../../public/skillsBackground.png";
+import bg from "../../public/skillsBackground.jpg";
 
 export const metadata: Metadata = {
   title: "Skills",

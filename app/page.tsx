@@ -12,7 +12,7 @@ import { TypoGraphyCustom } from "@/app/components/TypoGraphyCustom";
 import { ShootingStars } from "@/app/components/ui/ShootingStar";
 import "./index.css";
 import { ModalCustome } from "@/app/components/ModalCustome";
-import bg from "../public/homeBackground.png";
+import bg from "../public/homeBackground.jpg";
 const deathStar = localFont({
   src: "../public/fonts/DeathStar.otf",
   display: "swap",

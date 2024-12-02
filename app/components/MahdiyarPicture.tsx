@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import TooltipCustom from "@/app/components/TooltipCustom";
-import pic from "../../public/mahdiyarPic.jpeg";
+import pic from "../../public/mahdiyarPicture.jpeg";
 
 function MahdiyarPicture() {
   return (
@@ -16,7 +16,7 @@ function MahdiyarPicture() {
         alt="Mahdiyar picture"
         id="2"
         className={
-          "max-w-[190px] hover:scale-125 transition-transform duration-300 md:max-w-[194px] object-cover object-bottom h-min overflow-hidden"
+          "max-w-[190px] hover:scale-150 scale-125 transition-transform duration-300 md:max-w-[194px] object-cover object-bottom h-min overflow-hidden"
         }
         placeholder={"blur"}
       />
