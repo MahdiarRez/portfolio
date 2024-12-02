@@ -1,8 +1,8 @@
-.skillsTitle-shadow-text {
+.project-shadow-text {
     position: relative;
 }
 
-.skillsTitle-shadow-text::before {
+.project-shadow-text::before {
     content: 'PROJECTS';
     position: absolute;
     left: 4px;

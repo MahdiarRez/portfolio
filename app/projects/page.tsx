@@ -27,7 +27,7 @@ function Page() {
       />
       <Project>
         <BackBtn />
-        <PagesTitle classes="skillsTitle-shadow-text text-6xl sm2:text-7xl ">
+        <PagesTitle classes="project-shadow-text text-6xl sm2:text-7xl ">
           Projects
         </PagesTitle>
       </Project>
