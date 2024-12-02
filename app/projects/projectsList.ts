@@ -60,7 +60,7 @@ export const projectsList = [
     description:
       "My Portfolio is my inaugural Next.js application. It showcases my skills and projects while leveraging modern web technologies for a smooth, engaging user experience.",
     githubUrl: "https://github.com/MahdiyarRez/portfolio",
-    demoUrl: "https://little-menu.vercel.app/",
-    imgUrl: "/pizzateriaProject.png",
+    demoUrl: "https://mahdiyarrez.vercel.app/",
+    imgUrl: "/portfolioProject.png",
   },
 ];
