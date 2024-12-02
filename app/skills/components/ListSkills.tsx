@@ -1,8 +1,5 @@
 import React from "react";
 import ItemSkill from "@/app/skills/components/ItemSkill";
-// import { SiJavascript } from "react-icons/si";
-// import { SiTypescript } from "react-icons/si";
-// import { RiNextjsFill } from "react-icons/ri";
 
 function ListSkills() {
   return (
@@ -35,6 +32,13 @@ function ListSkills() {
         React Query
       </ItemSkill>
       <ItemSkill
+        i={12}
+        color="hover:text-green-500"
+        url="https://react-leaflet.js.org/"
+      >
+        React Leaflet
+      </ItemSkill>
+      <ItemSkill
         i={6}
         color="hover:text-purple-500"
         url="https://redux.js.org/"
@@ -43,6 +47,9 @@ function ListSkills() {
       </ItemSkill>
       <ItemSkill i={7} color="hover:text-blue-300" url="https://react.dev/">
         Context API
+      </ItemSkill>
+      <ItemSkill i={12} color="hover:text-yellow-400" url="https://motion.dev/">
+        Framer motion
       </ItemSkill>
       <ItemSkill
         i={8}
@@ -68,14 +75,19 @@ function ListSkills() {
       >
         RadixUi
       </ItemSkill>
+      <ItemSkill
+        i={12}
+        color="hover:text-black"
+        url="https://ui.aceternity.com/"
+      >
+        AceternityUi
+      </ItemSkill>
+      <ItemSkill i={12} color="hover:text-white" url="https://ui.shadcn.com/">
+        ShadCn
+      </ItemSkill>
       <ItemSkill i={12} color="hover:text-Purple" url="https://github.com/">
         Git & Github
       </ItemSkill>
-      {/*<div className="w-full mt-5 sm2:col-span-4 col-span-3 grid grid-cols-4 place-items-center gap-2 px-2">*/}
-      {/*  <SiJavascript size={40} className="fill-yellow-500" />*/}
-      {/*  <SiTypescript size={40} className="fill-blue-500" />*/}
-      {/*  <RiNextjsFill size={40} />*/}
-      {/*</div>*/}
     </div>
   );
 }

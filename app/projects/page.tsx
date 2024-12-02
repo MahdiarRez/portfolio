@@ -5,6 +5,7 @@ import "./index.css";
 import Project from "@/app/projects/Project";
 import BackBtn from "@/app/components/BackBtn";
 import PagesTitle from "@/app/components/common/PagesTitle";
+import bg from "../../public/projectsBackground.png";
 
 export const metadata: Metadata = {
   title: "Skills",
@@ -15,10 +16,13 @@ function Page() {
   return (
     <div className="h-dvh flex justify-center items-center overflow-hidden relative">
       <Image
-        src="/projectsBackground.png"
-        width={1000}
-        height={800}
+        src={bg}
+        priority
+        placeholder={"blur"}
         alt="bg-image"
+        quality={100}
+        fill
+        sizes={"100vw"}
         className="object-cover object-center h-full z-0 w-full"
       />
       <Project>

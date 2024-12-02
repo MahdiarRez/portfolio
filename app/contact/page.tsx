@@ -7,7 +7,7 @@ import PagesTitle from "@/app/components/common/PagesTitle";
 import "./index.css";
 import ContactForm from "@/app/contact/components/ContactForm";
 import Socials from "@/app/components/Socials";
-
+import bg from "../../public/contactBackground.png";
 export const metadata: Metadata = {
   title: "Contact me",
   description: "Contact Mahdiyar",
@@ -17,10 +17,13 @@ function Page() {
   return (
     <div className="h-dvh flex justify-center items-center overflow-hidden relative">
       <Image
-        src="/contactBackground.png"
+        src={bg}
+        priority
         alt="bg-image"
-        width={1000}
-        height={700}
+        fill
+        quality={100}
+        sizes={"100vw"}
+        placeholder={"blur"}
         className="object-cover object-center h-full z-0 w-full"
       />
       <BackBtn />

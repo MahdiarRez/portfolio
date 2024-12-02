@@ -10,9 +10,10 @@ export const projectsList = [
       "TailwindCss",
     ],
     description:
-      "Pizzateria is a dynamic Single Page Application (SPA) designed to provide a seamless online pizza ordering experience. Built with React and Redux Toolkit, this application offers a responsive and user-friendly interface, allowing customers to easily navigate through the pizza menu, manage their orders, and track their delivery status.",
+      "Pizzateria is an interactive SPA for effortless pizza ordering. Built with React and Redux Toolkit, it features a sleek interface for easy menu browsing, order management, and delivery tracking.",
     githubUrl: "https://github.com/MahdiyarRez/Pizzateria",
     demoUrl: "https://pizzateria.vercel.app/",
+    imgUrl: "/pizzateriaProject.png",
   },
   {
     name: "World-Tracker",
@@ -25,9 +26,10 @@ export const projectsList = [
       "Json server",
     ],
     description:
-      "Simple web app that allows users to keep track of the places they've visited. Built to highlight routing, the react context API as well as the leaflet library.",
+      "World-Tracker is a simple web app that lets users log places they’ve visited. It emphasizes routing and utilizes the React Context API alongside Leaflet for an engaging experience.",
     githubUrl: "https://github.com/MahdiyarRez/World-Conqueror",
     demoUrl: "https://world-conqueror.netlify.app/",
+    imgUrl: "/worldProject.png",
   },
   {
     name: "Little-Menu",
@@ -40,9 +42,10 @@ export const projectsList = [
       "Tailwind Animation",
     ],
     description:
-      "This is a React-based application designed to showcase a collection of products with an intuitive search and pagination feature. Users can easily search for products by name and navigate through the results seamlessly. The app leverages React Query for efficient data fetching and state management, providing a smooth user experience.",
+      "Little-Menu is a React app showcasing products with search and pagination. It uses React Query for data fetching, allowing users to easily find items by name and navigate results smoothly.",
     githubUrl: "https://github.com/MahdiyarRez/Little-Menu",
     demoUrl: "https://little-menu.vercel.app/",
+    imgUrl: "/menuProject.png",
   },
   {
     name: "Portfolio",
@@ -54,8 +57,10 @@ export const projectsList = [
       "aceternity ui",
       "TailwindCss",
     ],
-    description: "My portfolio, this is my first Next JS app.",
+    description:
+      "My Portfolio is my inaugural Next.js application. It showcases my skills and projects while leveraging modern web technologies for a smooth, engaging user experience.",
     githubUrl: "https://github.com/MahdiyarRez/portfolio",
     demoUrl: "https://little-menu.vercel.app/",
+    imgUrl: "/pizzateriaProject.png",
   },
 ];

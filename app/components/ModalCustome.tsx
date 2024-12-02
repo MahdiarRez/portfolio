@@ -14,7 +14,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ShooterCart } from "@/app/components/ui/ShooterCart";
 import MahdiyarPicture from "@/app/components/MahdiyarPicture";
-import Image from "next/image";
 
 const deathStar = localFont({
   src: "../../public/fonts/DeathStar.otf",
@@ -43,28 +42,20 @@ export function ModalCustome() {
               <p
                 className={`${Mont.className} text-center text-sm sm2:text-base font-medium sm:text-lg`}
               >
-                Hi i am skilled Front-End Developer with expertise in React,
-                Next JS and Typescript. With a strong focus on creating
-                intuitive and responsive web applications, I leverage my
-                knowledge of modern JavaScript frameworks to build seamless user
-                experiences.
+                <span className="text-pink-100 uppercase">front-end</span>{" "}
+                developer proficient in React, Next.js, Redux, React Query,
+                Tailwind CSS and other libraries. Building engaging and
+                performant web applications. Check out my projects and full
+                skill list to know me better ! Also i am 21 years old.
               </p>
             </div>
-            <div className="flex mt-3 flex-row-reverse gap-3 w-full items-center justify-center sm:hidden">
-              <Image
-                width={28}
-                height={28}
-                className="size-12 object-cover rounded-[0.235rem] border border-solid border-neutral-700"
-                src="/mahdiyarPic.jpeg"
-                alt="mahdiyar picture"
-              />
-              <Link
-                href="/contact"
-                className={`${deathStar.className} text-center text-Pink px-2.5 py-3 text-sm text-nowrap border-Pink border border-solid rounded-[0.235rem] focus:text-white focus:border-white transition-colors duration-300 bg-transparent tracking-wider`}
-              >
-                Get in touch with me
-              </Link>
-            </div>
+
+            <Link
+              href="/contact"
+              className={`${deathStar.className} text-center mt-3 text-Pink px-2.5 py-3 sm:hidden text-sm text-nowrap border-Pink border border-solid rounded-[0.235rem] focus:text-white focus:border-white transition-colors duration-300 bg-transparent tracking-wider`}
+            >
+              Get in touch with me
+            </Link>
             <ShooterCart />
           </ModalContent>
         </ModalBody>
@@ -83,7 +74,7 @@ export function ModalNav() {
         type: "spring",
         stiffness: 100,
       }}
-      className="min-h-[430px]  flex flex-col gap-5 ml-5 z-50 max-h-[431px]"
+      className="min-h-[430px] hidden sm:flex sm:flex-col gap-5 ml-5 z-50 max-h-[431px]"
       id="ModalNav"
     >
       <ModalFooter

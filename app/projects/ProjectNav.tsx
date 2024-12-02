@@ -4,7 +4,7 @@ import { ModalFooter } from "@/app/components/ui/Modal";
 import { motion } from "framer-motion";
 import localFont from "next/font/local";
 import TooltipCustom from "@/app/components/TooltipCustom";
-import Link from "next/link";
+import { DemoBtn, GithubBtn } from "@/app/projects/NavBtn";
 
 const deathStar = localFont({
   src: "../../public/fonts/DeathStar.otf",
@@ -34,36 +34,8 @@ function ProjectNav({
       <ModalFooter
         className={`font-bold gap-3 cursor-default justify-center overflow-hidden hidden sm:flex`}
       >
-        <Link href={github} target={"_blank"}>
-          <motion.button
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{
-              duration: 1.5,
-              type: "spring",
-              stiffness: 50,
-              delay: 0.4 + 0.2,
-            }}
-            className={`${deathStar.className} hidden sm:block text-base md:text-lg bg-transparent w-[8.5rem] text-nowrap md:w-40 text-Pink border border-solid border-Pink px-3 py-1 rounded-[0.235rem] hover:text-white hover:border-white transition-colors duration-300 ease-in-out tracking-wide`}
-          >
-            Github
-          </motion.button>
-        </Link>
-        <Link href={demo} target={"_blank"}>
-          <motion.button
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{
-              duration: 1.5,
-              type: "spring",
-              stiffness: 50,
-              delay: 0.4 + 0.4,
-            }}
-            className={`${deathStar.className} hidden sm:block text-base md:text-lg bg-transparent w-[8.5rem] text-nowrap md:w-40 text-Pink border border-solid border-Pink px-3 py-1 rounded-[0.235rem] hover:text-white hover:border-white transition-colors duration-300 ease-in-out tracking-wide`}
-          >
-            Demo
-          </motion.button>
-        </Link>
+        <GithubBtn github={github} />
+        <DemoBtn demo={demo} />
       </ModalFooter>
       <div
         className="flex-[3] p-6 overflow-hidden bg-DarkBlue cursor-default border border-solid border-neutral-700 rounded-md sm:flex sm:flex-col items-start justify-between hidden"

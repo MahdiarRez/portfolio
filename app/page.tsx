@@ -12,7 +12,7 @@ import { TypoGraphyCustom } from "@/app/components/TypoGraphyCustom";
 import { ShootingStars } from "@/app/components/ui/ShootingStar";
 import "./index.css";
 import { ModalCustome } from "@/app/components/ModalCustome";
-
+import bg from "../public/homeBackground.png";
 const deathStar = localFont({
   src: "../public/fonts/DeathStar.otf",
   display: "swap",
@@ -22,10 +22,13 @@ function Page() {
   return (
     <div className="h-dvh">
       <Image
-        src="/homeBackground.png"
+        src={bg}
         alt="bg-image"
-        width={1000}
-        height={8000}
+        priority
+        quality={100}
+        fill
+        sizes={"100vw"}
+        placeholder={"blur"}
         className="object-cover h-full z-0 w-full"
       />
       <ShootingStars />
