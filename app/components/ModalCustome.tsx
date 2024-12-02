@@ -34,7 +34,7 @@ export function ModalCustome() {
         <ModalBody>
           <ModalContent className="bg-DarkBlue cursor-default overflow-hidden relative ">
             <h4
-              className={`${deathStar.className} text-2xl sm:text-3xl mb-4 text-neutral-600 z-40 md:text-4xl dark:text-neutral-100 font-bold text-center tracking-wider `}
+              className={`${deathStar.className} text-2xl sm:text-3xl mb-4 z-40 md:text-4xl text-neutral-100 font-bold text-center tracking-wider `}
             >
               About me
             </h4>

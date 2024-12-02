@@ -44,7 +44,7 @@ function ModalProject({ project }: { project: ProjectType }) {
         >
           <ModalContent className="bg-DarkBlue cursor-default overflow-hidden relative">
             <h4
-              className={`${deathStar.className} text-xl sm2:text-2xl md:text-3xl text-neutral-600 z-40 xl:text-4xl dark:text-neutral-100 font-bold text-center tracking-widest`}
+              className={`${deathStar.className} text-xl sm2:text-2xl md:text-3xl z-40 xl:text-4xl text-neutral-100 font-bold text-center tracking-widest`}
             >
               {name}
             </h4>
