@@ -34,11 +34,11 @@ Welcome to my portfolio web app! This project showcases my skills and projects u
 
 ## Screenshots 📷 ##
 
-<img width="1470" alt="Screenshot 1403-09-12 at 17 00 51" src="https://github.com/user-attachments/assets/61813b75-9de8-48f2-994c-51577ed90f0f">
-<img width="1470" alt="Screenshot 1403-09-12 at 17 02 29" src="https://github.com/user-attachments/assets/350892b4-89cc-4e42-991e-7cf4eec8330e">
-<img width="1470" alt="Screenshot 1403-09-12 at 17 01 19" src="https://github.com/user-attachments/assets/53a6af09-eae1-4612-8eee-8fc7b76cbd68">
-<img width="1470" alt="Screenshot 1403-09-12 at 17 00 36" src="https://github.com/user-attachments/assets/4b65bae6-c7e1-4281-8dd0-ea660838b73b">
-<img width="1470" alt="Screenshot 1403-09-12 at 17 03 27" src="https://github.com/user-attachments/assets/18524cd2-9773-47f2-a2ba-937ebd0b3fa4">
+<img width="500" alt="Screenshot 1403-09-12 at 17 00 51" src="https://github.com/user-attachments/assets/61813b75-9de8-48f2-994c-51577ed90f0f">
+<img width="500" alt="Screenshot 1403-09-12 at 17 02 29" src="https://github.com/user-attachments/assets/350892b4-89cc-4e42-991e-7cf4eec8330e">
+<img width="500" alt="Screenshot 1403-09-12 at 17 01 19" src="https://github.com/user-attachments/assets/53a6af09-eae1-4612-8eee-8fc7b76cbd68">
+<img width="500" alt="Screenshot 1403-09-12 at 17 00 36" src="https://github.com/user-attachments/assets/4b65bae6-c7e1-4281-8dd0-ea660838b73b">
+<img width="500" alt="Screenshot 1403-09-12 at 17 03 27" src="https://github.com/user-attachments/assets/18524cd2-9773-47f2-a2ba-937ebd0b3fa4">
 
 
 ## How to use ? ##
