@@ -10,7 +10,7 @@ import Socials from "@/app/components/Socials";
 import bg from "../../public/contactBackground.jpg";
 export const metadata: Metadata = {
   title: "Contact me",
-  description: "Contact Mahdiyar",
+  description: "Contact Mahdiar",
 };
 
 function Page() {

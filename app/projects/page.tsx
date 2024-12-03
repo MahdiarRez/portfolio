@@ -8,8 +8,8 @@ import PagesTitle from "@/app/components/common/PagesTitle";
 import bg from "../../public/projectsBackground.jpg";
 
 export const metadata: Metadata = {
-  title: "Skills",
-  description: "Mahdiyar's skills",
+  title: "Projects",
+  description: "Mahdiar's projects",
 };
 
 function Page() {
