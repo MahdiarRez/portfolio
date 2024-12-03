@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-DarkBlue relative h-dvh overflow-hidden">
+      <body className="bg-DarkBlue relative h-dvh overflow-hidden min-h-[683px]">
         <Socials isForMobile={false} />
         <PressEnter />
         <Cv />

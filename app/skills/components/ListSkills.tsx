@@ -3,7 +3,7 @@ import ItemSkill from "@/app/skills/components/ItemSkill";
 
 function ListSkills() {
   return (
-    <div className="absolute place-items-center grid grid-cols-3 mt-32 sm2:grid-cols-4 lg:mt-60 sm:mt-36 gap-3 w-full px-3 max-w-fit">
+    <div className="absolute place-items-center grid grid-cols-3 mt-40 sm2:grid-cols-4 lg:mt-72 sm:mt-36 gap-3 w-full px-3 max-w-fit">
       <ItemSkill
         i={1}
         color="hover:text-yellow-300"

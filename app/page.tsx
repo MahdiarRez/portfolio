@@ -20,7 +20,7 @@ const deathStar = localFont({
 
 function Page() {
   return (
-    <div className="h-dvh">
+    <div className="h-dvh ">
       <Image
         src={bg}
         alt="bg-image"

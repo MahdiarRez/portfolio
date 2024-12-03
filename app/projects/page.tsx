@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 function Page() {
   return (
-    <div className="h-dvh flex justify-center items-center overflow-hidden relative">
+    <div className="h-dvh flex justify-center items-center overflow-hidden relative  min-h-[683px]">
       <Image
         src={bg}
         priority

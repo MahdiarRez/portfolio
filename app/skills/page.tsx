@@ -20,7 +20,7 @@ const Bebas = Bebas_Neue({ subsets: ["latin"], weight: ["400"] });
 
 function Page() {
   return (
-    <div className="h-dvh flex justify-center items-center overflow-hidden">
+    <div className="h-dvh flex justify-center items-center overflow-hidden min-h-[683px]">
       <Image
         src={bg}
         priority
