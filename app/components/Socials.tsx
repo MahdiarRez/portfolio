@@ -8,7 +8,7 @@ function Socials({ isForMobile }: { isForMobile: boolean }) {
   if (isForMobile) {
     return (
       <div className="flex md:hidden flex-row items-center justify-center gap-x-5 w-full absolute left-0 right-0 bottom-11 z-30">
-        <ItemSocial name="Github" i={1} href="https://github.com/MahdiyarRez">
+        <ItemSocial name="Github" i={1} href="https://github.com/MahdiarRez">
           <FaGithub
             role="link"
             className="text-Pink hover:text-white duration-300 transition-colors ease-in-out cursor-pointer size-10"
@@ -24,11 +24,7 @@ function Socials({ isForMobile }: { isForMobile: boolean }) {
             className="text-Pink hover:text-white duration-300 transition-colors ease-in-out cursor-pointer size-10"
           />
         </ItemSocial>
-        <ItemSocial
-          name="Telegram"
-          i={3}
-          href="https://telegram.me/mahdiyarRez"
-        >
+        <ItemSocial name="Telegram" i={3} href="https://telegram.me/mahdiarDev">
           <FaTelegram
             role="link"
             className="text-Pink hover:text-white duration-300 transition-colors ease-in-out cursor-pointer size-10"
@@ -39,7 +35,7 @@ function Socials({ isForMobile }: { isForMobile: boolean }) {
   }
   return (
     <div className="hidden md:flex flex-col items-center justify-center gap-y-5 h-full absolute top-0 bottom-0 left-7 lg:left-11 z-30">
-      <ItemSocial name="Github" i={1} href="https://github.com/MahdiyarRez">
+      <ItemSocial name="Github" i={1} href="https://github.com/MahdiarRez">
         <FaGithub
           role="link"
           className="text-Pink hover:text-white duration-300 transition-colors ease-in-out cursor-pointer size-7 lg:size-10"
@@ -55,7 +51,7 @@ function Socials({ isForMobile }: { isForMobile: boolean }) {
           className="text-Pink hover:text-white duration-300 transition-colors ease-in-out cursor-pointer size-7 lg:size-10"
         />
       </ItemSocial>
-      <ItemSocial name="Telegram" i={3} href="https://telegram.me/mahdiyarRez">
+      <ItemSocial name="Telegram" i={3} href="https://telegram.me/mahdiarDev">
         <FaTelegram
           role="link"
           className="text-Pink hover:text-white duration-300 transition-colors ease-in-out cursor-pointer size-7 lg:size-10"
