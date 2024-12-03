@@ -8,8 +8,8 @@ import { ShootingStars } from "@/app/components/ui/ShootingStar";
 import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
-  title: "Mahdiyar Rezaei",
-  description: "About Mahdiyar Rezaei",
+  title: "Mahdiar Rezaei",
+  description: "About Mahdiar Rezaei",
 };
 
 export default function RootLayout({

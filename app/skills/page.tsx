@@ -13,7 +13,7 @@ import bg from "../../public/skillsBackground.jpg";
 
 export const metadata: Metadata = {
   title: "Skills",
-  description: "Mahdiyar's skills",
+  description: "Mahdiar's skills",
 };
 
 const Bebas = Bebas_Neue({ subsets: ["latin"], weight: ["400"] });
