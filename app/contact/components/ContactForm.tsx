@@ -64,10 +64,10 @@ const ContactForm = () => {
     setFormIsLoading(true);
     emailjs
       .send(
-        "service_bm9rycd",
-        "template_sbjhtbl",
+        "service_2lf2nvj",
+        "template_asc5g4h",
         formData,
-        "q_R0r-Vq9vndc_uyP",
+        "J5iiz6kRxdVx5Du7t",
       )
       .then(() => {
         const success = "Your message has been sent successfully!";
