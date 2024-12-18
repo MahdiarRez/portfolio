@@ -20,7 +20,7 @@ function Page() {
         priority
         placeholder={"blur"}
         alt="bg-image"
-        quality={100}
+        quality={70}
         fill
         sizes={"100vw"}
         className="object-cover object-center h-full z-0 w-full"

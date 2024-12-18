@@ -26,7 +26,7 @@ function Page() {
         src={bg}
         alt="bg-image"
         priority
-        quality={100}
+        quality={70}
         fill
         sizes={"100vw"}
         placeholder={"blur"}

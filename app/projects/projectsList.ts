@@ -63,4 +63,13 @@ export const projectsList = [
     demoUrl: "https://mahdiyarrez.vercel.app/",
     imgUrl: "/portfolioProject.png",
   },
+  {
+    name: "Taskydone",
+    technos: ["HTML", "CSS", "Javascript", "TailwindCss", " ", " "],
+    description:
+      'Taskydone is a clean to-do list app built with vanilla JavaScript and Tailwind CSS. Add, edit, and delete tasks, customize your profile, and watch your tasks seamlessly transition from "Tomorrow" to "Today" after 24 hours. All data is conveniently saved in local storage.',
+    githubUrl: "https://github.com/MahdiarRez/Taskydone",
+    demoUrl: "https://taskidone.netlify.app/",
+    imgUrl: "/taskydoneProject.png",
+  },
 ];

@@ -24,7 +24,7 @@ function Page() {
       <Image
         src={bg}
         priority
-        quality={100}
+        quality={70}
         placeholder="blur"
         fill
         sizes={"100vw"}
