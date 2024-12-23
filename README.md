@@ -51,7 +51,7 @@ If you would like to run this project locally, follow these steps:
 
 1. Clone the repository:
    
-   git clone https://github.com/MahdiyarRez/portfolio.
+   git clone https://github.com/MahdiarRez/portfolio.
    
 2. Navigate to the project directory:
    
