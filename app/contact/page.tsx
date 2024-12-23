@@ -21,7 +21,7 @@ function Page() {
         priority
         alt="bg-image"
         fill
-        quality={70}
+        quality={100}
         // sizes={"(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"}
         placeholder={"blur"}
         className="object-cover object-center h-full z-0 w-full"
