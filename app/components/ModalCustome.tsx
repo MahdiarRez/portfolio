@@ -76,7 +76,7 @@ export function ModalNav() {
       id="ModalNav"
     >
       <ModalFooter
-        className={`font-bold gap-3 cursor-default justify-center overflow-hidden hidden sm:flex`}
+        className={`font-bold gap-3 cursor-default justify-center min-h-[190px] overflow-hidden hidden sm:flex`}
       >
         <Link href="/projects">
           <motion.button
