@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import pic from "../../public/mahdiyarPicture.jpeg";
+import pic from "../../public/me.jpg";
 
 function MahdiyarPicture() {
   return (
@@ -10,7 +10,7 @@ function MahdiyarPicture() {
         alt="Mahdiyar picture"
         id="2"
         className={
-          "max-w-[190px] scale-150 transition-transform duration-300 md:max-w-[194px]  object-cover  object-right-top pr-5 h-full overflow-hidden"
+          "max-w-[190px] scale-[2] transition-transform duration-300 md:max-w-[194px]  object-cover  object-[10px,10px] pr-5 h-full overflow-hidden"
         }
         placeholder={"blur"}
       />
