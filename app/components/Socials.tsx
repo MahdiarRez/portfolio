@@ -17,7 +17,7 @@ function Socials({ isForMobile }: { isForMobile: boolean }) {
         <ItemSocial
           name="Linkedin"
           i={2}
-          href="https://linkedin.com/in/mahdiyarDev"
+          href="https://linkedin.com/in/mahdiarDev"
         >
           <FaLinkedin
             role="link"
