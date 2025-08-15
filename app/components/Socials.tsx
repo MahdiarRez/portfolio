@@ -41,7 +41,7 @@ function Socials({ isForMobile }: { isForMobile: boolean }) {
           className="text-Pink hover:text-white duration-300 transition-colors ease-in-out cursor-pointer size-7 lg:size-10"
         />
       </ItemSocial>
-      <ItemSocial name="Linkedin" i={2} href="www.linkedin.com/in/mahdiyarDev">
+      <ItemSocial name="Linkedin" i={2} href="www.linkedin.com/in/mahdiardev">
         <FaLinkedin
           role="link"
           className="text-Pink hover:text-white duration-300 transition-colors ease-in-out cursor-pointer size-7 lg:size-10"
